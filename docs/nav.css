@@ -1,5 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
 :root {
+    --primary:#FF0460;
+    --secondary:#FFCE00;
     --primary-color: #2d2c62;
     --primary-light-color: #96ADC8;
     --secondary-color: #fa676d;
@@ -16,7 +18,7 @@
 }
 
 body{
-    background: var(--alice-blue);
+    background: white;
     font-family: "SharpSansNo1-Extrabold", sans-serif;
 
 }
@@ -28,6 +30,8 @@ a {
 }
 .dropdown{
     width: auto;
+    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+
 }
 .dropdown::after{
     content: url(imgs/down_arrow.png);
@@ -54,12 +58,24 @@ a {
     display: none;
 }
 
+.nav-link {
+    transition: color 0.3s ease-in-out;
+    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+  }
+  
+  .sub-nav li a {
+    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+  }
+  
+
 .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 132px;
+    height: 85px;
 }
 
 .navbar-brand {
@@ -88,7 +104,7 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--secondary-color);
+    color: var(--primary);
 }
 
 .header-btns {
@@ -114,15 +130,15 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: var(--secondary-color);
-    box-shadow: inset 0 5px var(--secondary-color);
+    color: var(--primary);
+    box-shadow: inset 0 5px var(--primary);
 }
 .sub-nav {
     position: absolute;
     top: 20px;
     left: 0;
     width: auto; /* change width to auto */
-    background: var(--primary-light-color);
+    background: white;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
     visibility: hidden;
     left: 50%;
@@ -141,7 +157,7 @@ nav ul li ul.sub-nav li {
     box-sizing: border-box; /* include padding in width calculation */
 }
 nav ul li ul.sub-nav li :hover{   
-    color: var(--alice-blue);
+    color: var(--primary);
 }
 
 
