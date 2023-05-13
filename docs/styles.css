@@ -2,6 +2,10 @@
 :root{
     --primary:#FF0460;
     --secondary:#FFCE00;
+    --primary-color: #2d2c62;
+    --primary-light-color: #96ADC8;
+    --secondary-color: #fa676d;
+    --alice-blue: #e3f0ff;
 }
 *{
     margin: 0;
@@ -15,40 +19,7 @@
     font-family: "SharpSansNo1-Extrabold", sans-serif;
 }
 
-/* navigation */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: white;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav a {
-    padding: 1rem;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: var(--primary);
-    ;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: var(--secondary);
-
-  }
-  
   /* hompage hero  */
 
 
@@ -132,3 +103,4 @@ header {
     transition: 0.25s background-color;
     line-height: 1;
 }
+

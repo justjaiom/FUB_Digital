@@ -1,0 +1,317 @@
+:root{
+    --primary-color: #2d2c62;
+    --primary-light-color: #96ADC8;
+    --secondary-color: #fa676d;
+    --alice-blue: #e3f0ff;
+}
+
+/* navigation */
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  } 
+   */
+  
+   .dropdown{
+    width: auto;
+}
+.dropdown::after{
+    content: url(imgs/down_arrow.png);
+    position: absolute;
+    top: -4.5rem;
+    left: -105%;
+    margin: 0px;
+    padding: 0px;
+    transform: scale(.1);
+}
+
+.body-container {
+    max-width: 1320px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+#header {
+    min-height: 100vh;
+    background-color: var(--alice-blue);
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 132px;
+}
+
+.navbar-brand {
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.navbar-collapse {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav {
+    list-style-type: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 64px;
+}
+
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.header-btns {
+    margin-left: 110px;
+}
+
+.header-btns .btn {
+
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .btn.btn-login{
+    color: var(--primary-color);
+}
+.btn.btn-login:hover{
+    border-color: var(--primary-color);
+}
+.btn.btn-start{
+    background-color: var(--primary-light-color);
+}
+.btn.btn-start:hover{
+    background-color: var(--secondary-color);
+} */
+/* dropdown */
+nav ul li {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+nav ul li:hover {
+    color: var(--secondary-color);
+    box-shadow: inset 0 5px var(--secondary-color);
+}
+.sub-nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: auto; /* change width to auto */
+    background: var(--primary-light-color);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
+    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+nav ul li ul.sub-nav li {
+    color: var(--primary-color);
+    width: 100%;
+    padding: 15px 50px; /* increase padding left and right */
+    list-style: none;
+    max-width: fit-content;
+    box-sizing: border-box; /* include padding in width calculation */
+}
+nav ul li ul.sub-nav li :hover{   
+    color: var(--alice-blue);
+}
+
+
+
+nav ul li ul.sub-nav li:hover {
+    color: var(--secondary-color);
+    box-shadow: 0 0;
+}
+
+nav ul li:hover ul.sub-nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .nav-item {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .brand-and-toggler {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: var(--secondary-color);
+        height: 100%;
+        width: 320px;
+        transform: translateX(100%);
+        z-index: 999;
+    }
+
+    .nav-item {
+        display: block;
+        margin: 80px 0;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        margin-top: 80px;
+
+    }
+
+    .nav-link {
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .nav-link:hover {
+        color: var(--primary-color);
+    }
+
+    .brand-and-toggler {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        border: none;
+        font-size: 26px;
+        display: inline-block;
+        padding: 4px 8px;
+        background-color: transparent;
+        color: var(--primary-color);
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-toggler:hover {
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+
+    .header-btns {
+        margin: 0;
+    }
+
+    .header-btns .btn {
+        display: block;
+        text-align: center;
+        width: 260px;
+    }
+
+    .btn.btn-login {
+        margin-bottom: 12px;
+        background-color: #fff;
+    }
+
+    .btn.btn-login:hover {
+        border-color: #fff !important;
+        transform: translateY(-2px);
+    }
+
+    .btn.btn-start:hover {
+        background-color: var(--primary-light-color) !important;
+        transform: translateY(-2px);
+    }
+
+    nav ul li ul.sub-nav {
+        position: relative;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-40%);
+        width: 100%;
+        background: transparent;
+        content-visibility: hidden;
+        border: none;
+        opacity: 0;
+        box-shadow: none;
+    }
+    /* fix the sub nav elements */
+    .sub-nav li {
+        color: var(--primary-color);
+        width: 100%;
+        list-style: none;
+        max-width: fit-content; 
+        margin-bottom: 50px;
+    }
+
+
+    nav ul li:hover ul.sub-nav {
+        content-visibility: visible;
+        opacity: 1;
+        margin-bottom: 40px;
+
+    }
+
+    .dropdown::after{
+        content: none;
+    }
+    
+
+    a {
+        color: yellow;
+    }
+
+    li {
+        color: black !important;
+    }
+
+}
+
+/* navbar related classes */
+.showNavbar {
+    transform: translateX(0);
+}
+
+.showNavbar-toggler {
+    z-index: 1000;
+    color: #fff;
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
