@@ -25,6 +25,7 @@
 }
 
 
+
   /* hompage hero  */
 
 .bg_img {
@@ -152,13 +153,13 @@
 
 /* fact section  */
 
-.fact-section{
+.fact-section {
     background: #121212;
     padding: 80px 100px;
     display: block;
-}
-
-.fact-grid{
+  }
+  
+  .fact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
@@ -168,9 +169,9 @@
     margin: 0 auto;
     padding: 20px 0;
     justify-items: center;
-}
-
-.fact-header{
+  }
+  
+  .fact-header {
     grid-column: 1/-1;
     width: 100%;
     font-family: "SharpSansNo1-Extrabold", sans-serif;
@@ -182,9 +183,9 @@
     letter-spacing: 0.02em;
     color: var(--primary);
     z-index: 1;
-}
-
-.fact-item {
+  }
+  
+  .fact-item {
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -209,10 +210,87 @@
     text-transform: none;
     font-weight: 750;
   }
-
   
-
-  .highlight{
+  .highlight {
     color: var(--secondary);
   }
   
+  @media only screen and (max-width: 600px) {
+    .fact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-gap: 20px;
+    }
+  
+    .fact-item {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .fact-header {
+      font-size: 24px;
+    }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 700px) {
+    .fact-grid {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 15px;
+      row-gap: 15px;
+    }
+  
+    .fact-header {
+      font-size: 36px;
+    }
+  }
+  
+  
+
+  /* half section       */
+
+  .half{
+    margin: 0;
+
+    width: 100%;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    min-height: 700px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .half_text-left{
+      background: linear-gradient( 134.23deg, #FF0460 16.53%, #FFCE00 135.12%);
+      margin: 0;
+      padding: 80px;
+      border: 0;
+      
+      mix-blend-mode: normal;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: flex-end;
+      padding-left: 100px;
+      padding-right: 88px;
+      align-self: stretch;
+      box-sizing: border-box;
+    }
+.half_text-left h2{
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    width: 100%;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 450px;
+}
+    
+.half_text-right{
+    width: 50%;
+
+}
