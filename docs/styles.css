@@ -19,6 +19,13 @@
     font-family: "SharpSansNo1-Extrabold", sans-serif;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 
   /* hompage hero  */
 
@@ -61,7 +68,7 @@
 
 .home-hero_container{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 96px);
     max-width: 1440px;
     display: flex;
     background-repeat: no-repeat;
@@ -104,3 +111,61 @@
     line-height: 1;
 }
 
+.fact-section{
+    background: #121212;
+    padding: 80px 100px;
+    display: block;
+}
+
+.fact-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 25px;
+    width: 100%;
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-items: center;
+}
+
+.fact-header{
+    grid-column: 1/-1;
+    width: 100%;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #FF0460;
+    z-index: 1;
+}
+
+.fact-item{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background: #FFFFFF;
+    text-align: center;
+    line-height: 1.5;
+    min-height: 189px;
+    width: 100%;
+    filter: drop-shadow(0px 8px 20px rgba(255, 4, 96, 0.15));
+    position: relative;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.fact-title{
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.6px;
+    color: #FF0460;
+    padding: 32px;
+    text-align: center;
+    text-transform: none;
+    font-weight: 750;
+}
