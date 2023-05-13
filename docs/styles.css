@@ -1,4 +1,48 @@
+
 :root{
     --primary:#FF0460;
     --secondary:#FFCE00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: "open_sansregular", sans-serif;
+}
+.home-hero{
+    background: linear-gradient(102.76deg, #FF0460 30.7%, #FFCE00 100%);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    justify-content: center;
+}
+
+.home-hero_container{
+    width: 100%;
+    height: calc 100vh;
+    max-width: 1440px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.home-hero_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+}
+.home-hero_text h1{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 700px;
 }
