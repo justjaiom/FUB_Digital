@@ -83,48 +83,6 @@
     font-family: "SharpSansNo1-Extrabold", sans-serif;
 }
 
-.revamp{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: black;
-    padding-top: 15%;
-    padding-bottom: 15%
-}
-
-.revamp-left img {
-    width: 120%;
-    margin-left: -70px;
-}
-
-.revamp-left {
-    width: 60%;
-    color: var(--primary-color);
-}
-
-.revamp-right {
-    width: 40%;
-    overflow: hidden;
-}
-
-.revamp-title{
-    color: #ffffff;
-    font-size: 2.5rem;
-    width: 100%;
-    max-width: 700px;
-    font-weight: 800;
-}
-
-.revamp-text{
-    color: #FFFFFF;
-    margin-bottom: 32px;
-    font-size: 1rem;
-    max-width: 450px;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
-}
-
-
 
 
 
