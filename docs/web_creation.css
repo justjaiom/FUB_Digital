@@ -1,0 +1,27 @@
+.web_creations-hero {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    justify-content: center;
+  }
+
+  .web_creations-hero_container {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 96px);
+    max-width: 1440px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 40% !important;
+  }
+
+  canvas{
+    border:1px white;
+}
+  
+.home-hero_subtext{
+    color: white;
+}
