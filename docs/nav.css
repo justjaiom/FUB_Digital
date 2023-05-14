@@ -14,12 +14,14 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     font-family: "SharpSansNo1-Extrabold", sans-serif;
-
 }
+
+
 
 body{
     background: white;
     font-family: "SharpSansNo1-Extrabold", sans-serif;
+
 
 }
 
@@ -31,6 +33,8 @@ a {
 .dropdown{
     width: auto;
     font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+  overflow-x: visible !important;
+
 
 }
 .dropdown::after{
@@ -41,6 +45,7 @@ a {
     margin: 0px;
     padding: 0px;
     transform: scale(.1);
+    
 }
 
 .body-container {
@@ -160,6 +165,7 @@ nav ul li ul.sub-nav li {
 }
 nav ul li ul.sub-nav li :hover{   
     color: var(--primary);
+    
 }
 
 
@@ -167,11 +173,13 @@ nav ul li ul.sub-nav li :hover{
 nav ul li ul.sub-nav li:hover {
     color: var(--primary);
     box-shadow: 0 0;
+    
 }
 
 nav ul li:hover ul.sub-nav {
     visibility: visible;
     opacity: 1;
+    
 }
 @media screen and (max-width: 1200px) {
     .nav-item {
