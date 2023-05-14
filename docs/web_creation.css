@@ -24,6 +24,11 @@
     line-height: 1.2;
 }
 
+
+#canvas{
+  width: 500px;
+}
+
 .web_creations-hero {
     height: 70vh;
     width: 100%;
@@ -64,7 +69,7 @@
   margin: 0;
   width: 100%;
   font-family: "SharpSansNo1-Extrabold", sans-serif;
-  min-height: 30vh;
+  min-height: 70vh;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -74,7 +79,7 @@
 }
 
 .half-web-creation_text-left {
-  background: linear-gradient(134.08deg, var(--secondary)-13.36%, var(--primary) 51%);
+  background: var(--primary);
 
   margin: 0;
   padding: 80px;
@@ -90,9 +95,7 @@
   box-sizing: border-box;
 }
 
-.copy-50-50{
-  background: linear-gradient(134.23deg, var(--primary) 16.53%, var(--secondary) 135.12%);
-}
+
 
 .half-web-creation_text-left h2 {
   color: #FFFFFF;
@@ -101,7 +104,7 @@
   white-space: pre-line;
   font-size: 2rem;
   font-weight: 700;
-  max-width: 450px;
+  max-width: 600px;
 }
 
 .half-web-creation_text-left p {
