@@ -1,27 +1,149 @@
+@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
+:root{
+    --primary:#FF0460;
+    --secondary:#FFCE00;
+    --pop:#2d37ed;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 .web_creations-hero {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: bottom right;
     display: flex;
     justify-content: center;
+    background-color: black;
+
   }
+  
 
   .web_creations-hero_container {
     background-color: white;
     width: 100%;
-    height: calc(100vh - 96px);
-    max-width: 1440px;
+    height: 70vh;
     display: flex;
     background-repeat: no-repeat;
     background-position: center right;
+    background-image: url(imgs/banner_img.png); 
+    background-color: black;
     background-size: 40% !important;
+    max-width: 1440px;
   }
-
-  canvas{
-    border:1px white;
-}
   
 .home-hero_subtext{
     color: white;
 }
+
+.home-hero_text h1 {
+  font-size: 72px;
+  margin-bottom: 32px;
+  line-height: 1.17;
+  color: var(--secondary);
+}
+
+.half-web-creation {
+  margin: 0;
+  width: 100%;
+  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  min-height: 30vh;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.half-web-creation_text-left {
+  background: linear-gradient(134.23deg, var(--primary) 16.53%, var(--secondary) 135.12%);
+  margin: 0;
+  padding: 80px;
+  border: 0;
+  mix-blend-mode: normal;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Updated value */
+  padding-left: 100px;
+  padding-right: 88px;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+.half-web-creation_text-left h2 {
+  color: #FFFFFF;
+  margin-bottom: 32px;
+  width: 100%;
+  white-space: pre-line;
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 450px;
+}
+
+.half-web-creation_text-left p {
+  color: #FFFFFF;
+  margin-bottom: 32px;
+  font-size: 1rem;
+  max-width: 450px;
+}
+
+
+
+.half-web-creation_text-right {
+  width: 50%;
+  color: var(--primary);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.half-web-creation_text-right div {
+  max-width: 460px;
+}
+
+@media (max-width: 768px) {
+    .half-web-creation {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .half-web-creation_text-left {
+      order: 2;
+      width: 100%;
+      padding: 40px;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .half-web-creation_text-left h2,
+    .half-web-creation_text-left p {
+      max-width: none;
+    }
+    
+    .half-web-creation_text-right {
+      order: 1;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
