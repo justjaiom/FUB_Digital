@@ -74,7 +74,8 @@
 }
 
 .half-web-creation_text-left {
-  background: linear-gradient(134.23deg, var(--primary) 16.53%, var(--secondary) 135.12%);
+  background: linear-gradient(134.08deg, var(--secondary)-13.36%, var(--primary) 51%);
+
   margin: 0;
   padding: 80px;
   border: 0;
@@ -87,6 +88,10 @@
   padding-right: 88px;
   align-self: stretch;
   box-sizing: border-box;
+}
+
+.copy-50-50{
+  background: linear-gradient(134.23deg, var(--primary) 16.53%, var(--secondary) 135.12%);
 }
 
 .half-web-creation_text-left h2 {
