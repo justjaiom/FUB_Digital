@@ -37,7 +37,7 @@ a {
     content: url(imgs/down_arrow.png);
     position: absolute;
     top: -4.5rem;
-    left: -110%;
+    left: -100%;
     margin: 0px;
     padding: 0px;
     transform: scale(.1);
@@ -81,6 +81,8 @@ a {
 .navbar-brand {
     font-size: 29px;
     font-weight: 600;
+    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+
 }
 
 .navbar-collapse {
