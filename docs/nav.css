@@ -81,6 +81,8 @@ a {
 .navbar-brand {
     font-size: 29px;
     font-weight: 600;
+    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+
 }
 
 .navbar-collapse {
