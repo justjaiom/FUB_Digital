@@ -1,0 +1,149 @@
+.consulting{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.consulting-left img {
+    width: 120%;
+    margin-left: -70px;
+}
+
+.consulting-left {
+    width: 60%;
+    color: var(--primary-color);
+}
+
+.consulting-right {
+    width: 40%;
+    overflow: hidden;
+}
+
+.consulting-title{
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+    font-weight: 800;
+}
+
+.consulting-text{
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    font-size: 1rem;
+    max-width: 450px;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+}
+
+
+
+.campaign{
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);;
+    padding-top: 15%;
+    padding-bottom: 15%
+}
+
+.campaign-right img {
+    width: 120%;
+    margin-left: -70px;
+}
+
+.campaign-right {
+    width: 60%;
+    color: var(--primary-color);
+}
+
+.campaign-left {
+    width: 40%;
+    overflow: hidden;
+}
+
+.campaign-title{
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+    font-weight: 800;
+}
+
+.campaign-text{
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    font-size: 1rem;
+    max-width: 450px;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+}
+
+.revamp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    padding-top: 15%;
+    padding-bottom: 15%
+}
+
+.revamp-left img {
+    width: 120%;
+    margin-left: -70px;
+}
+
+.revamp-left {
+    width: 60%;
+    color: var(--primary-color);
+}
+
+.revamp-right {
+    width: 40%;
+    overflow: hidden;
+}
+
+.revamp-title{
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+    font-weight: 800;
+}
+
+.revamp-text{
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    font-size: 1rem;
+    max-width: 450px;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+}
+
+.black-to-white-gradient {
+    background: linear-gradient(to bottom, black, white);
+    height: 100vh;
+}
+
+
+.digital-marketing-final-message {
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.digital-marketing-final-message h1 {
+    text-align: center;
+    color: blue;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
