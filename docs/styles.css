@@ -248,49 +248,76 @@
   
 
   /* half section       */
-
-  .half{
-    margin: 0;
-
-    width: 100%;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
-    min-height: 700px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .half_text-left{
-      background: linear-gradient( 134.23deg, #FF0460 16.53%, #FFCE00 135.12%);
-      margin: 0;
-      padding: 80px;
-      border: 0;
-      
-      mix-blend-mode: normal;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      /* justify-content: center; */
-      align-items: flex-end;
-      padding-left: 100px;
-      padding-right: 88px;
-      align-self: stretch;
-      box-sizing: border-box;
-    }
-.half_text-left h2{
-    color: #FFFFFF;
-    margin-bottom: 32px;
-    width: 100%;
-    white-space: pre-line;
-    font-size: 2rem;
-    font-weight: 700;
-    max-width: 450px;
+.half {
+  margin: 0;
+  width: 100%;
+  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  min-height: 700px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-    
-.half_text-right{
-    width: 50%;
 
+.half_text-left {
+  background: linear-gradient(134.23deg, #FF0460 16.53%, #FFCE00 135.12%);
+  margin: 0;
+  padding: 80px;
+  border: 0;
+  mix-blend-mode: normal;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Updated value */
+  padding-left: 100px;
+  padding-right: 88px;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+.half_text-left h2 {
+  color: #FFFFFF;
+  margin-bottom: 32px;
+  width: 100%;
+  white-space: pre-line;
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 450px;
+}
+
+.half_text-left p {
+  color: #FFFFFF;
+  margin-bottom: 32px;
+  font-size: 1rem;
+  max-width: 450px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFCE00;
+  color: #FF0460;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FFD633;
+}
+
+.half_text-right {
+  width: 50%;
+  color: var(--primary);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.half_text-right div {
+  max-width: 460px;
 }
