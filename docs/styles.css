@@ -24,6 +24,22 @@
     line-height: 1.2;
 }
 
+#red{
+  color: var(--primary);
+  font-weight: 600;
+}
+
+#yellow{
+  color: var(--secondary);
+  font-weight: 600;
+
+}
+
+#blue{
+  color: var(--pop);
+  font-weight: 600;
+
+}
 .bg_img{
     width: 200px;
 }
