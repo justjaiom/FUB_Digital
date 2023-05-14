@@ -37,7 +37,7 @@ a {
     content: url(imgs/down_arrow.png);
     position: absolute;
     top: -4.5rem;
-    left: -110%;
+    left: -100%;
     margin: 0px;
     padding: 0px;
     transform: scale(.1);
