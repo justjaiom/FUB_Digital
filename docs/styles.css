@@ -270,7 +270,7 @@
 }
 
 .half_text-left {
-  background: linear-gradient(134.23deg, #FF0460 16.53%, #FFCE00 135.12%);
+  background: linear-gradient(134.23deg, var(--primary) 16.53%, var(--secondary) 135.12%);
   margin: 0;
   padding: 80px;
   border: 0;
@@ -368,7 +368,7 @@
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.02em;
-    color: #FF0460;
+    color: var(--primary);
   }
 
   .services-heading p {
