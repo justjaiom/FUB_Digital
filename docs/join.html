@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="join.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("N7BBFqByDPn2oBQ8F");
+            })();
+        </script>
+
         <title>FUB Digital</title>
     </head>
 <body>
@@ -81,8 +91,8 @@
                     <label for="web_creation">Website Creation</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="web_maintenance" name="web_maintenance">
-                    <label for="web_maiintenance">Website Maintenance/Hosting</label>
+                    <input type="checkbox" id="seo" name="web_maintenance">
+                    <label for="seo">Exclusinve SEO</label>
                 </div>
                 <div>
                     <input type="checkbox" id="marketing" name="marketing">
@@ -95,6 +105,14 @@
             <button  id="submit" type="submit">Sumbit</button>
            
         </form>
+
+        <div class="popup" id="popup">
+            <img src="imgs/check.png" alt="">
+            <h2>Thank You</h2>
+            <p>Your info has been submitted! check your inbox for a message from us</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+
       </section>
     </main>
       <script src="script.js"></script>
