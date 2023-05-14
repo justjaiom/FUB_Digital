@@ -1,55 +1,99 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="join.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>FUB Digital</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="join.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>FUB Digital</title>
+    </head>
+<body>
     <header>
-      <nav class="navbar">
-        <div class="brand-and-toggler">
-          <a href="index.html" class="navbar-brand">FUB Digital</a>
-          <button class="navbar-toggler" type="button">
-            <span>
-              <i class="fas fa-bars"></i>
-            </span>
-          </button>
+        <nav class = "navbar">
+            <div class = "brand-and-toggler">
+                <a href = "index.html" class = "navbar-brand">FUB Digital</a>
+                <button class = "navbar-toggler" type = "button">
+                    <span>
+                        <i class = "fas fa-bars"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class = "navbar-collapse">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link">HOME</a>
+                    </li>
+                    <li class = "nav-item"> <a class="nav-link"><div class="dropdown">SERVICES</div>
+
+                    </a>
+                        <ul class="sub-nav">
+
+                            <li><a href="web_creation.html">WEBSITE CREATION</a></li>
+                            <li><a href="seo.html">SEO</a></li>
+                            <li><a href="digital_marketing.html">DIGITAL MARKETING</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "ourwork.html" class = "nav-link">OUR WORK</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a href = "join.html" class = "nav-link">JOIN FORCES</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+      </header>
+      <section class="join-hero">
+        <div class="join-hero-heading">
+            <h2>Join Us On Your Modern Journy</h2>
         </div>
 
-        <div class="navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"><div class="dropdown">SERVICES</div> </a>
-              <ul class="sub-nav">
-                <li><a href="web_creation.html">WEBSITE CREATION</a></li>
-                <li><a href="seo.html">SEO</a></li>
-                <li><a href="digital_marketing.html">DIGITAL MARKETING</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="ourwork.html" class="nav-link">OUR WORK</a>
-            </li>
+      </section>
+      <section class="form-container">
+        <form id="form">
+            <div class="input">
+                <input type="text" id="from_name" placeholder="First Name" required>
+                <input type="text" id="lname" placeholder="Last Name" required>
+            </div>
 
-            <li class="nav-item">
-              <a href="join.html" class="nav-link">JOIN FORCES</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </body>
+            <div class="input">
+                <input type="email" id="email_id" placeholder="Your Email" required>
+                <input type="text" id="phone" placeholder="Phone" required>
+            </div>
+            <div class="extra">
+                <input class="extra" type="text" id="web_url" placeholder="Current Website?">
+            </div>
+
+            <div class="checkboxs">
+                <label>What Service(s) Do You Need?</label>
+                <div>
+                    <input type="checkbox" id="web_creation" name="web_creation">
+                    <label for="web_creation">Website Creation</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="web_maintenance" name="web_maintenance">
+                    <label for="web_maiintenance">Website Maintenance/Hosting</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="marketing" name="marketing">
+                    <label for="marketng">Digital Marketing</label>
+                </div>
+            </div>
+
+            <textarea name="message" id="message" rows="4"
+            placeholder="   Tell us what you have in mind"></textarea>
+            <button  id="submit" type="submit">Sumbit</button>
+           
+        </form>
+      </section>
+      <script src="script.js"></script>
+</body>
 </html>
