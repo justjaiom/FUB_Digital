@@ -442,12 +442,3 @@ main{
   justify-content: center;
 }
 
-.home-hero__button {
-  color: white;
-  background-color: var(--pop);
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
