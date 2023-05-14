@@ -194,7 +194,7 @@ nav ul li:hover ul.sub-nav {
         top: 0;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: var(--secondary-color);
+        background-color: black;
         height: 100%;
         width: 320px;
         transform: translateX(100%);
@@ -239,7 +239,7 @@ nav ul li:hover ul.sub-nav {
     }
 
     .navbar-toggler:hover {
-        background-color: var(--secondary-color);
+        background-color: black;
         color: #fff;
     }
 
