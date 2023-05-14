@@ -15,6 +15,22 @@ window.addEventListener('resize', () => {
     }, 400);
 });
 
+let width = screen.width;
+
+if (width > 992){
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+}
+
+
 
 
 function SendMail() {
