@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="web_creation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FUB Digital</title>
 </head>
 
 <body>
     <header>
-        <nav class = "navbar">
-            <div class = "brand-and-toggler">
-                <a href = "index.html" class = "navbar-brand">FUB digital</a>
-                <button class = "navbar-toggler" type = "button">
+        <nav class="navbar">
+            <div class="brand-and-toggler">
+                <a href="index.html" class="navbar-brand">FUB digital</a>
+                <button class="navbar-toggler" type="button">
                     <span>
-                        <i class = "fas fa-bars"></i>
+                        <i class="fas fa-bars"></i>
                     </span>
                 </button>
             </div>
 
-            <div class = "navbar-collapse">
-                <ul class = "navbar-nav">
-                    <li class = "nav-item">
-                        <a href = "index.html" class = "nav-link">Home</a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
-                    <li class = "nav-item"> <a class="nav-link"><div class="dropdown">Services</div>
+                    <li class="nav-item"> <a class="nav-link">
+                            <div class="dropdown">Services</div>
 
-                    </a>
+                        </a>
                         <ul class="sub-nav">
                             <li><a href="web_creation.html">Website Creation</a></li>
-                            <li><a href="web_hosting.html">Socail Media Marketing</a></li>
+                            <li><a href="web_hosting.html">{Gen Z consulting}</a></li>
                             <li><a href="digital_marketing.html">Digital Marketing</a></li>
                         </ul>
 
                     </li>
-                    <li class = "nav-item">
-                        <a href = "our_work.html" class = "nav-link">Our Work</a>
+                    <li class="nav-item">
+                        <a href="our_work.html" class="nav-link">Our Work</a>
                     </li>
 
-                    <li class = "nav-item">
-                        <a href = "join.html" class = "nav-link">Join Forces</a>
+                    <li class="nav-item">
+                        <a href="join.html" class="nav-link">Join Forces</a>
                     </li>
                 </ul>
             </div>
         </nav>
+    </header>
 
-        </nav>
-      </header>
+    <main class="content">
+        <section id="web_creations-hero" class="web_creations-hero">
+            <div class="web_creations-hero_container"
+                style="background-image: url(imgs/banner_img.png); background-color: black;">
+                <div class="home-hero_text">
+                    <h1 style="color: #FFCE00"> You need Websites</h1>
+                    <div class="home-hero_subtext">
+                        <h2 style="color: white"> You need Websites</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      
+        <section id="web_creations-stats" class="web_creations-stats">
+            <canvas id="canvas" width="400" height="300" style="float: left;"></canvas>
+            <div class="home-hero_text">
+                <br>
+                <br>
+                <br>
+                <h1 style="color: #FF0460"> 71% of Companies Have Websites</h1>
+                <div class="home-hero_subtext">
+                    <h2 style="color: black;"> Forbes</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
 
 
     <script src="script.js"></script>
+    <script src="web_creation.js"></script>
 </body>
