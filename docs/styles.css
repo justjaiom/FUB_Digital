@@ -158,7 +158,7 @@ main{
       font-size: 1.8rem;
     }
     
-    .home-hero_container {
+    .home-hero_container   {
       background-size: 0% !important;
     }
   }

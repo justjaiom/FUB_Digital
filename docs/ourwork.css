@@ -145,8 +145,17 @@ body {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    max-height: 100vh;
+    padding: 2rem;
+    height: auto;
     width: 100vw;
     overflow-x: auto;
     justify-content: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .ourwork-hero_container{
+    background-size: 0% !important;
+
+  }
 }
