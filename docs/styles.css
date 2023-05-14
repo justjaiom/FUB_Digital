@@ -390,6 +390,10 @@
     text-transform: uppercase;
   }
 
+  .services-icons a{
+    color: white;
+  }
+
   @media (max-width: 768px) {
     .services-icons {
         flex-direction: column; /* Changes the flex direction to vertical */
