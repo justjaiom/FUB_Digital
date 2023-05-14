@@ -117,6 +117,10 @@
     border-radius: 10px;
     
   }
+  .button-link:hover{
+    scale: 1.05;
+    transition: .5s;
+  }
 
 
   /* Media Queries */
