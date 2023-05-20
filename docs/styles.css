@@ -463,6 +463,7 @@ footer .content{
 }
 footer .content p,a{
   color: #fff;
+  line-height: 24px;
 }
 footer .content .box{
   width: 33%;
