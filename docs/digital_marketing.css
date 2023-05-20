@@ -1,43 +1,70 @@
-.consulting{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: black;
-    padding-top: 15%;
-    padding-bottom: 15%;
-}
+@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
+:root{
+    --primary:#FF0460;
+    --secondary:#FFCE00;
+    --pop:#2d37ed;
 
-.consulting-left img {
-    width: 120%;
-    margin-left: -70px;
 }
-
-.consulting-left {
-    width: 60%;
-    color: var(--primary-color);
-}
-
-.consulting-right {
-    width: 40%;
-    overflow: hidden;
-}
-
-.consulting-title{
-    color: #ffffff;
-    font-size: 2.5rem;
-    width: 100%;
-    max-width: 700px;
-    font-weight: 800;
-}
-
-.consulting-text{
-    color: #FFFFFF;
-    margin-bottom: 32px;
-    font-size: 1rem;
-    max-width: 450px;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
     font-family: "SharpSansNo1-Extrabold", sans-serif;
 }
+
+main{
+  overflow-x: hidden;
+
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.marketing-hero{
+    height: 75vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-weight: 600px;
+}
+
+.marketing-hero h1{
+    height: auto;
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 32px;
+    line-height: 1.17;
+    margin: 0;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    min-height: 70vh;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
 
 
 
