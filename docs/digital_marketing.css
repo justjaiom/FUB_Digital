@@ -35,6 +35,7 @@ main{
     background-repeat: no-repeat;
     background-position: bottom right;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
@@ -42,6 +43,14 @@ main{
     font-size: 32px;
     font-weight: 600px;
 }
+
+.marketing-hero p{
+    text-align: center;
+    max-width: 1080px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
 
 .marketing-hero h1{
     height: auto;
@@ -51,14 +60,18 @@ main{
     line-height: 1.17;
     margin: 0;
     font-family: "SharpSansNo1-Extrabold", sans-serif;
-    min-height: 70vh;
-    font-weight: 600;
+    font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+@media only screen and (max-width: 400px) {
+.marketing-hero h1{
+font-size: 2.5rem;
+}
 
+}
 
 
 
