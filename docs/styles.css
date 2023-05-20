@@ -335,6 +335,11 @@ main{
 
 .half_text-right div {
   max-width: 460px;
+
+}
+
+.half-flip{
+  background: linear-gradient(134.08deg, #FFCE00 -13.36%, #FF0460 51%);
 }
 
 @media (max-width: 768px) {
