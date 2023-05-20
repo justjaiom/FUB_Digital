@@ -115,6 +115,7 @@ main{
     width: 100%;
     max-width: 700px;
     font-weight: 800;
+    font-size: 72px;
   }
   
   .home-hero__button {
