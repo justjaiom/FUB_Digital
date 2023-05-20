@@ -139,6 +139,7 @@ body {
 .home-hero_subtext{
     color: white;
     font-family: "SharpSansNo1-Extrabold", sans-serif;
+    max-width: 800px;
 }
 
 .ourwork-container{
