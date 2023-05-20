@@ -42,7 +42,6 @@ function SendMail() {
         web_url: document.getElementById("web_url").value,
 
         web_creation: document.getElementById("web_creation").checked,
-        seo: document.getElementById("seo").checked,
         marketing: document.getElementById("marketing").checked,
     }
     emailjs.send("service_qrj6ggp", "template_2bbd5jv", params).then(function (res) {
@@ -63,6 +62,8 @@ function closePopup() {
 $('#form').on('submit',function (e) {
     e.preventDefault();
     SendMail()
+    document.getElementById("form").reset();
+
     console.log('done')
  
  }
