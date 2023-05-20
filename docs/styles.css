@@ -165,9 +165,6 @@ main{
   
   /* Medium screens */
   @media only screen and  (max-width: 1024px) {
-    .home-hero_text {
-      padding-left: 50px;
-    }
     
     .home-hero_text h1 {
       font-size: 2rem;
