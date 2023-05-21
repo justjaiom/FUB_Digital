@@ -69,3 +69,45 @@ $('#form').on('submit',function (e) {
  }
 
 )
+
+
+// Function to set the theme preference as a cookie
+function setThemePreference(theme) {
+    document.cookie = `theme=${theme}; path=/;`;
+  }
+  
+  // Function to toggle the theme
+  function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+  
+    // Store the theme preference as a cookie
+    if (body.classList.contains('dark-theme')) {
+      setThemePreference('dark');
+    } else {
+      setThemePreference('bright');
+    }
+  }
+  
+  // Function to retrieve the theme preference from the cookie
+  function getThemePreference() {
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+      const [name, value] = cookie.trim().split('=');
+      if (name === 'theme') {
+        return value;
+      }
+    }
+    return null;
+  }
+  
+  // Check if the theme preference is already set in the cookie
+  const storedTheme = getThemePreference();
+  if (storedTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+  }
+  
+  // Toggle theme when the checkbox is clicked
+  const themeSwitch = document.getElementById('checkbox');
+  themeSwitch.addEventListener('change', toggleTheme);
+  

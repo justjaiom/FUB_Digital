@@ -1,11 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
 :root {
-    --primary:#FF0460;
-    --secondary:#FFCE00;
     --primary-color: #2d2c62;
-    --primary-light-color: #96ADC8;
-    --secondary-color: #fa676d;
-    --alice-blue: #e3f0ff;
+
 }
 
 * {
