@@ -76,15 +76,14 @@
       <section class="form-container">
         <form id="form">
             <div class="input">
-                <input type="text" id="from_name" placeholder="First Name" required>
-                <input type="text" id="lname" placeholder="Last Name" required>
+                <input type="text" id="from_name" placeholder="First Name" pattern="[A-Za-z ]+" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32" required>
+                <input type="text" id="lname" placeholder="Last Name" pattern="[A-Za-z ]+" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32" required>
             </div>
 
             <div class="input">
                 <input type="email" id="email_id" placeholder="Your Email" required>
-                <input type="text" id="phone" placeholder="Phone" required>
-            </div>
-            <div class="extra">
+                <input type="text" id="phone" placeholder="Phone" oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 13);" required>
+                <div class="extra">
                 <input class="extra" type="text" id="web_url" placeholder="Current Website?">
             </div>
 
