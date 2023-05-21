@@ -197,6 +197,10 @@ nav ul li:hover ul.sub-nav {
 
     }
 
+    nav ul li:hover{
+        box-shadow: none;
+    }
+
     .brand-and-toggler {
         display: flex;
         align-items: center;
@@ -282,6 +286,7 @@ nav ul li:hover ul.sub-nav {
         border: none;
         opacity: 0;
         box-shadow: none;
+        margin-top: 30px;
     }
     /* fix the sub nav elements */
     .sub-nav li {
