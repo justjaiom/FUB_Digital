@@ -161,6 +161,7 @@ nav ul li ul.sub-nav li {
     list-style: none;
     max-width: fit-content;
     box-sizing: border-box; /* include padding in width calculation */
+    margin-top: 30px;
 }
 nav ul li ul.sub-nav li :hover{   
     color: var(--primary);
@@ -286,7 +287,6 @@ nav ul li:hover ul.sub-nav {
         border: none;
         opacity: 0;
         box-shadow: none;
-        margin-top: 30px;
     }
     /* fix the sub nav elements */
     .sub-nav li {
