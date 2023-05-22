@@ -6,9 +6,9 @@ body {
 
 }
 body.dark-theme{
-  --primary: #87b97c ;
-  --secondary: #7785AC;
-  --pop: #CBDF90;
+  --primary: #7db570 ;
+  --secondary: #4e5f8e;
+  --pop: #b8cb81;
 }
 
 
@@ -53,7 +53,9 @@ img{
 }
 em {
   margin-left: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
 }
 
 .theme-switch {
@@ -90,7 +92,7 @@ em {
 }
 
 input:checked + .slider {
-  background-color: var(--secondary);
+  background-color: var(--pop);
 }
 
 input:checked + .slider:before {
@@ -406,6 +408,9 @@ input:checked + .slider:before {
   box-sizing: border-box;
 }
 
+.smaller {
+  scale: .7;
+}
 .half_text-left h2 {
   color: #FFFFFF;
   margin-bottom: 32px;

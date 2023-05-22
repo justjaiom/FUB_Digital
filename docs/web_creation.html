@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="web_creation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     
@@ -58,35 +59,74 @@
       </header>
 
     <main class="content">
-        <section id="web_creations-hero" class="web_creations-hero">
-            <div class="web_creations-hero_container">
-                <div class="home-hero_text">
-                    <h1 >You need a website</h1>
-                    <div class="home-hero_subtext">
-                        <h2>WEBSITES ARE AN EXTENSION OF YOUR BRAND</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="web-creation-hero" >
+        <h1 class="animate__animated animate__fadeInDown">You Need A Website</h1>
+        <p class="animate__animated animate__fadeInDown">Not any website, a modern website</p>        
+    </section>
 
-        <section id="web_creations-offer" class="web_creations-offer">
-            <div class="web_creations-offer-text">
-                <h1>WE CREATE WEBSITES</h1>
-            </div>
-        </section>
+    <section class="services">
+      <div class="services-heading">
+          <h2>Our Website Creation Services</h2>
+          <p>Our team is dedicated to igniting your ideas and ensuring your audience is fully engaged from start to finish.</p>
+          <a href="" class="button-link survice-button">LEARN MORE</a>
+      </div>
+      <div class="services-icons">
+          <a href="web_creation.html" id="red"> WEB CREATION</a>
+          <a href="" id="yellow">WEb and ux design</a>
+          <a href="digital_marketing.html" id="blue" >web hosting</a>
+      </div>
+    </section>
 
         <section class="half-web-creation">
-            <div class="half-web-creation_text-right">
-                <canvas id="canvas" width="400" height="300"></canvas>
-            </div>
             <div class="half-web-creation_text-left">
-                <h2> 71% of Companies Have Websites</h2>
-                <p>your website is you, and without one, how can customers learn about you? The digital presense a website serves is unmatched by any social media. Even worse if it's not pleasing to look at! </p>
-                <br>
-                <p> Successful companies all have one ting in common, a modern, eyecatching website!</p>
-
+              <h2>Web Creation</h2>
+              <p>your website is you, and without one, how can customers learn about you? The digital presense a website serves is unmatched by any social media. Even worse if it's not pleasing to look at! </p>
+              <h2>Statistics</h2>
+              <p>&bull; 71% Of Comapnies Have Websites</p>
+              <p>&bull; A new website is built every three seconds</p>
+              <p>&bull; 63% of small businesses plan to invest in their website performance</p>
+              <p>&bull; Users form an opinion about a website in 0.05 seconds</p>
+              <a href="#contact" class="button-link">GET STARTED</a>
+            </div>
+            <div class="half-web-creation_text-right">
+              <canvas id="canvas" width="400" height="300"></canvas>
             </div>
           </section>
+
+          <section class="half">
+            <div class="half_text-right">
+              <img src="imgs/design1.svg" class="smaller" alt="">
+              
+            </div>
+            <div class="half_text-left half-flip">
+              <h2>Web And UX Design </h2>
+              <p>Short message service (SMS) marketing is a form of marketing that businesses use to send promotions to customers via text messages</p>
+              <h2>Statistics</h2>  
+              <p>&bull;59% of people prefer browsing beautiful and well-designed sites than basic ones </p>                   
+              <p>&bull; First impressions of websites are 94% related to design </p>                   
+              <p>&bull; The average cost of designing a basic website is $3200</p>                   
+              <p>&bull; 53% of web users are drawn to color more than any other visual element</p>                   
+              <a href="#contact" class="button-link">GET STARTED</a>
+            </div>
+          </section>
+
+          <section class="half">
+            <div class="half_text-left half-reverse">
+              <h2> What Is Web Hosting? </h2>
+              <p>The process where a web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet.</p>
+              <h2>Facts</h2>
+              <p>&bull; Over 1.8 billion websties are registerd on the interent, but only 25% of those websites are active</p>
+              <p>&bull; .com domains account for over 40% of all domains</p>
+              <p>&bull; The most expensive domain in the world is valued at $49.7 million</p>
+              <p>&bull; The average cost of a domain is $15 </p>
+
+              <a href="#contact" class="button-link">GET STARTED</a>
+            </div>
+            <div class="half_text-right ">
+                <img src="imgs/hosting1.svg" alt="" class="smaller">
+            </div>
+          </section>
+
 
           <section id="web_creations-hero2" class="web_creations-hero2">
             <div class="web_creations-hero2_container">
@@ -111,18 +151,7 @@
             </div>
         </section>
 
-          <section class="services">
-            <div class="services-heading">
-                <h2>Our Website Creation Services</h2>
-                <p>Our team is dedicated to igniting your ideas and ensuring your audience is fully engaged from start to finish.</p>
-                <a href="" class="button-link survice-button">LEARN MORE</a>
-            </div>
-            <div class="services-icons">
-                <a href="web_creation.html" id="red"> WEB CREATION</a>
-                <a href="" id="yellow">WEb and ux design</a>
-                <a href="digital_marketing.html" id="blue" >web hosting</a>
-            </div>
-          </section>
+
           
     </main>
     <footer>
