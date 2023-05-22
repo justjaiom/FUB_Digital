@@ -83,7 +83,7 @@
 
             <div class="input">
                 <input type="email" id="email_id" placeholder="Your Email" required>
-                <input type="text" id="phone" placeholder="Phone" oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 13);" required>
+                <input type="text" id="phone" placeholder="Phone" oninput="this.value = this.value.replace(/[^\d-]/g, ''); addDashPhone();" onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.key === '-';" maxlength="12" required>
                 <div class="extra">
                 <input class="extra" type="text" id="web_url" placeholder="Current Website?">
             </div>

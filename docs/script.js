@@ -121,3 +121,11 @@ function setThemePreference(theme) {
   const themeSwitch = document.getElementById('checkbox');
   themeSwitch.addEventListener('change', toggleTheme);
   
+
+  function addDashPhone() {
+    var inputValue = document.getElementById("phone").value;
+    var inputValueLength = inputValue.length;
+    if (inputValueLength == 3 || inputValueLength == 7) {
+      document.getElementById("phone").value = inputValue + "-";
+    }
+  }
