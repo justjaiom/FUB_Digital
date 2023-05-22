@@ -25,43 +25,49 @@
 #canvas{
   width: 500px;
 }
-
-.web_creations-hero {
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-
-  }
-  
-
-  .web_creations-hero_container {
-    background-color: white;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-image: url(imgs/banner_img.png); 
-    background-color: black;
-    background-size: 40% !important;
-    max-width: 1440px;
-  }
-  
-.home-hero_subtext{
-    color: white;
+.web-creation-hero{
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
+  color: white;
+  font-size: 32px;
+  font-weight: 600px;
 }
 
-.home-hero_text h1 {
+.web-creation-hero p{
+  text-align: center;
+  max-width: 1080px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+
+.web-creation-hero h1{
+  height: auto;
+  text-align: center;
   font-size: 72px;
   margin-bottom: 32px;
   line-height: 1.17;
-  color: var(--secondary);
+  margin: 0;
+  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+@media only screen and (max-width: 400px) {
+.marketing-hero h1{
+font-size: 2.5rem;
+}
+
+}
 .half-web-creation {
   margin: 0;
   width: 100%;
@@ -144,7 +150,7 @@
   -webkit-background-clip: text; /* For Safari */
   -webkit-text-fill-color: transparent; /* For Safari */
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   max-width: 100%;
   width: auto;
   margin: 0 auto;

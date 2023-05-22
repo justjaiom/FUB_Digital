@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>FUB Digital</title>
 </head>
 <body>
@@ -59,18 +60,18 @@
             </svg>
         </div>
         <section id="home-hero" class="home-hero">
-            <div class="home-hero_container" style="background-image: url(imgs/banner_img.png)">
+            <div class="home-hero_container animate__animated  animate__fadeIn" style="background-image: url(imgs/banner_img.png)">
                 <div class="home-hero_text">
-                    <h1>Ditch The Old Ways Enter the Digital World </h1>
-                    <a href="join.html" class="home-hero__button button-link">
+                    <h1 class="animate__animated animate__fadeInDown">Ditch The Old Ways Enter the Digital World </h1>
+                    <a href="join.html" class="home-hero__button button-link animate__animated animate__fadeInLeft" >
                         JOIN FORCES
                     </a>
-                    <div class="theme-switch-wrapper">
+                    <div class="theme-switch-wrapper animate__animated animate__fadeInLeft">
                         <label class="theme-switch" for="checkbox">
-                            <input type="checkbox" id="checkbox" />
+                            <input type="checkbox" id="checkbox" onclick="changetext()" />
                             <div class="slider round"></div>
                       </label>
-                      <em>To Bright?</em>
+                      <em id="text-btn">Too Bright?</em>
                     </div>
 
                 </div>
