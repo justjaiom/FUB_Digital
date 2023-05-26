@@ -648,6 +648,7 @@ input:checked + .slider:before {
     align-items: center;
     width: 200px;
     height: 200px;
+    line-height: 2rem;
     background-color: black;
     color: white;
     text-align: center;
