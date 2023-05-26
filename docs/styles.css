@@ -1,14 +1,13 @@
 @import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
 body {
-    --primary:#FF0460;
-    --secondary:#FFCE00;
-    --pop:#2d37ed;
-
+  --primary:#FF0460;  
+  --secondary:#FFCE00;
+  --pop:#2d37ed;
 }
 body.dark-theme{
-  --primary: #7db570 ;
-  --secondary: #4e5f8e;
-  --pop: #b8cb81;
+  --primary: #579e47 ;
+  --secondary: #2ec4b6;
+  --pop: #aac261;
 }
 
 
@@ -236,6 +235,8 @@ input:checked + .slider:before {
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 2px;
+    border-radius: 5px;
+    border: 2px solid var(--pop);
     text-decoration: none;
     box-shadow: 0px 8px 20px rgba(45, 55, 237, 0.2);
     transition: 0.25s background-color;
@@ -243,8 +244,10 @@ input:checked + .slider:before {
     border-radius: 10px;
   }
   .button-link:hover{
-    scale: 1.05;
     transition: .5s;
+    color: var(--pop);
+    background: white;
+
   }
 
 
@@ -280,6 +283,62 @@ input:checked + .slider:before {
     }
   }
   
+
+/* About us section */
+
+.aboutUS{
+  background: #121212;
+  padding: 80px 90px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.aboutUS-container h1{
+  color: var(--primary);
+  width: 100%;
+  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.aboutUS-container p{
+  color: white;
+  width: 100%;
+  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.aboutUS-container ul{
+  color: white;
+  width: 100%;
+  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutUs-container ul, li{
+    color: white !important;
+    text-size-adjust: 24px;
+    flex-direction: column;
+  }
+}
 
 /* fact section  */
 
@@ -523,6 +582,46 @@ input:checked + .slider:before {
   .survice-button{
     margin: 40px auto;
   }
+
+  .services-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .services-icons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }  
+
+  .card:hover {
+    border-color: var(--primary);
+  }
+  
+  .card#blue:hover {
+    border-color: var(--pop);
+  }
+  
 
   .services-icons{
     max-width: 990px;
