@@ -34,13 +34,12 @@ a {
 
 }
 .dropdown::after{
-    content: url(imgs/down_arrow.png);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";    display: grid;
     position: absolute;
-    top: -4.5rem;
-    left: -100%;
-    margin: 0px;
-    padding: 0px;
-    transform: scale(.1);
+    left: 38%;
+
     
 }
 
