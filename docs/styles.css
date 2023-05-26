@@ -186,44 +186,89 @@ input:checked + .slider:before {
     background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
     height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
     display: flex;
     justify-content: center;
-  }
-  
-  .home-hero_container {
+}
+
+.home-hero_container {
     width: 100%;
     height: calc(100vh - 96px);
     max-width: 1440px;
     display: flex;
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 40% !important;
-  }
-  
-  .home-hero_text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.home-hero_text {
     padding-left: 100px;
-  }
-  
-  .home-hero_text h1 {
+}
+
+.home-hero_text h1 {
     color: #ffffff;
     font-size: 2.5rem;
     width: 100%;
     max-width: 500px;
     font-weight: 800;
     font-size: 2.5rem;
-  }
-  
-  .home-hero__button {
+}
+
+.home-hero__button {
     padding: 20px 48px;
     margin-top: 64px;
+}
 
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.updown{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation-name: moveUpDown;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation-name: moveUpDown;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0);
   }
+  50% {
+      transform: translateY(-40px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+  
   
   .button-link {
     display: inline-block;
@@ -256,17 +301,26 @@ input:checked + .slider:before {
   /* Small screens */
   @media only screen and (max-width: 1023px) {
     .home-hero_text {
-      padding-left: 20px;
+        padding-left: 20px;
     }
     
     .home-hero_text h1 {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
     
-    .home-hero_container   {
-      background-size: 0% !important;
+    .home-hero_container {
+        background-size: 0% !important;
     }
-  }
+    
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+    
+    .image-container {
+        display: none;
+    }
+}
+
   
   /* Medium screens */
   @media only screen and  (max-width: 1024px) {
