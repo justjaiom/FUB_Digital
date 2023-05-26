@@ -22,6 +22,8 @@
 }
 
 
+
+
 #canvas{
   width: 500px;
 }
@@ -45,8 +47,22 @@
   max-width: 1080px;
   margin-top: 1rem;
   font-size: 1rem;
+  font-weight: 600;
 }
 
+
+.web-creation-hero h3{
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.17;
+  margin: 0;
+  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
 
 .web-creation-hero h1{
   height: auto;
@@ -60,11 +76,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 400px) {
-.marketing-hero h1{
+@media only screen and (max-width: 500px) {
+.web-creation-hero h1{
 font-size: 2.5rem;
+}
+.web-creation-hero h3{
+  content-visibility: hidden;
+}
+
+.web-creation-hero p{
+  font-size: 1rem;
 }
 
 }
@@ -132,92 +156,8 @@ font-size: 2.5rem;
   max-width: 460px;
 }
 
-.web_creations-offer {
-  margin: 0;
-  width: 100%;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
-  min-height: 700px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.web_creations-offer-text {
-  background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
-  -webkit-background-clip: text; /* For Safari */
-  -webkit-text-fill-color: transparent; /* For Safari */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  max-width: 100%;
-  width: auto;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
-  font-size: 2.5rem;
-  width: 100%;
-  max-width: 500px;
-  font-weight: 800;
-  font-size: 2.5rem;
-}
 
 
-
-.web_creations-hero2 {
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  display: flex;
-  justify-content: center;
-  background-color: black;
-
-}
-
-
-.web_creations-hero2_container {
-  background-color: white;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-image: url(imgs/banner_img.png); 
-  background-color: black;
-  background-size: 40% !important;
-  max-width: 1440px;
-}
-
-.home-hero2_subtext{
-  color: white;
-}
-
-.home-hero2_text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding-left: 100px;
-}
-
-.home-hero2_text h1 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  width: 100%;
-  max-width: 500px;
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-
-
-.home-hero2_text h1 {
-  font-size: 72px;
-  margin-bottom: 32px;
-  line-height: 1.17;
-  color: var(--secondary);
-}
 
 .old-to-new{
   background: white;
@@ -297,3 +237,6 @@ font-size: 2.5rem;
 
     }
   }
+
+
+
