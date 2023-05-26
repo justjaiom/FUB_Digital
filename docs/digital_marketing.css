@@ -61,11 +61,13 @@ main{
     justify-content: center;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 .marketing-hero h1{
 font-size: 2.5rem;
 }
-
+.marketing-hero p{
+    font-size: 1rem;
+  }
 }
 
 
