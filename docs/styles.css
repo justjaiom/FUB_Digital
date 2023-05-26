@@ -5,9 +5,9 @@ body {
   --pop:#2d37ed;
 }
 body.dark-theme{
-  --primary: #579e47 ;
+  --primary: #8bc27f ;
   --secondary: #2ec4b6;
-  --pop: #aac261;
+  --pop: #c2ba61;
 }
 
 
@@ -620,6 +620,9 @@ input:checked + .slider:before {
   
   .card#blue:hover {
     border-color: var(--pop);
+  }
+  .card#yellow:hover {
+    border-color: var(--secondary);
   }
   
 
