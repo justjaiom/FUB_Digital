@@ -2,7 +2,7 @@
 body {
   --primary:#FF0460;  
   --secondary:#FFCE00;
-  --pop:#2d37ed;
+  --pop:#1c27f5;
 }
 body.dark-theme{
   --primary: #26547C ;
