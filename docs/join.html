@@ -74,8 +74,11 @@
                 </div>
 
       </section>
+
       <section class="form-container">
         <form id="form">
+          <div class="center">
+
             <div class="input">
                 <input type="text" id="from_name" placeholder="First Name" pattern="[A-Za-z ]+" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32" required>
                 <input type="text" id="lname" placeholder="Last Name" pattern="[A-Za-z ]+" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32" required>
@@ -85,11 +88,11 @@
                 <input type="email" id="email_id" placeholder="Your Email" required>
                 <input type="text" id="phone" placeholder="Phone" oninput="this.value = this.value.replace(/[^\d-]/g, ''); addDashPhone();" onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.key === '-';" maxlength="12" required>
                 <div class="extra">
-                <input class="extra" type="text" id="web_url" placeholder="Current Website?">
-            </div>
+                  <input class="extra" type="text" id="web_url" placeholder="Current Website?">
+                </div>
 
             <div class="checkboxs">
-                <label>What Service(s) Do You Need?</label>
+                <label>What General Service(s) Do You Need?</label>
                 <div>
                     <input type="checkbox" id="web_creation" name="web_creation">
                     <label for="web_creation">Website Creation</label>
@@ -99,20 +102,35 @@
                     <label for="marketng">Digital Marketing</label>
                 </div>
             </div>
+          </div>
 
             <textarea name="message" id="message" rows="4"
-            placeholder="   Tell us what you have in mind"></textarea>
-            <button  id="submit"  class="button-link" type="submit">Submit</button>
-           
+            placeholder="   Tell us what types of sercices you need listed below"></textarea>
+            <button  id="submit"  class="button-link service-button" type="submit">Submit</button>
         </form>
+        
 
         <div class="popup" id="popup">
             <img src="imgs/check.png" alt="">
             <h2>Thank You</h2>
             <p>Your info has been submitted! check your inbox for a message from us</p>
-            <button type="button" onclick="closePopup();">OK</button>
+            <button type="button" onclick="closePopup();" ;">OK</button>
         </div>
 
+      </section>
+
+      <section class="services">
+        <div class="services-heading">
+            <h2 style="color: white;">All Of Our Services </h2>
+        </div>
+        <div class="services-icons">
+            <a href="web_creation.html" class="card" id="red">Web Creation</a>
+            <a href="web_creation.html" class="card" id="red">Web And Ux Design</a>
+            <a href="web_creation.html" class="card" id="red">Web Hosting</a>
+            <a href="digital_marketing.html" class="card" id="blue">Email Marketing</a>
+            <a href="digital_marketing.html" class="card" id="blue">SMS Marketing </a>
+            <a href="digital_marketing.html" class="card" id="blue">Auto Google Reviews</a>
+        </div>
       </section>
     </main>
     <footer>
