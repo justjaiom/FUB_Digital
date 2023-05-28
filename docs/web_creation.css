@@ -91,6 +91,7 @@ font-size: 2.5rem;
   font-size: 1rem;
 }
 
+
 }
 .half-web-creation {
   margin: 0;
@@ -184,12 +185,7 @@ font-size: 2.5rem;
     }
   }
 
-  @media only screen and (max-width: 1023px) {
-    .web_creations-hero_container, .web_creations-hero2_container{
-      background-size: 0% !important;
-
-    }
-  }
+  
 
 /* the revamp part  */
   .web_creations-hero2 {
@@ -209,11 +205,7 @@ font-size: 2.5rem;
     width: 100%;
     height: 100vh;
     display: flex;
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-image: url(imgs/banner_img.png); 
     background-color: black;
-    background-size: 40% !important;
     max-width: 1440px;
   }
   
@@ -227,7 +219,7 @@ font-size: 2.5rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 100px;
+    text-align: left;
   }
   
   .home-hero2_text h1 {
@@ -244,8 +236,16 @@ font-size: 2.5rem;
     font-size: 72px;
     margin-bottom: 32px;
     line-height: 1.17;
-    color: var(--secondary);
+    color: var(--primary);
   }
+
+  .home-hero2_text h1 span {
+    font-size: 72px;
+    margin-bottom: 32px;
+    line-height: 1.17;
+    color: var(--pop);
+  }
+
 
   .web_creations_offering-title {
     font-family: "SharpSansNo1-Extrabold", "sans-serif";
@@ -255,11 +255,33 @@ font-size: 2.5rem;
     padding-right: 5%;
     padding-top: 10%;
   }
+
+  .Building_web_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+  }
+  
+  .Building_web_title h1 {
+    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-size: 50px;
+  }
+  
   
   .title_web_creations h1 {
     font-family: "SharpSansNo1-Extrabold", sans-serif;
     font-size: 1.2rem;
     font-size: 50px;
+    padding-top: 5%;
     margin-bottom: 32px;
     width: 100%;
     color: var(--primary);
