@@ -355,7 +355,12 @@ input:checked + .slider:before {
   padding: 80px 90px;
   display: flex;
   align-items: center;
+  padding: 10%;
   margin: 0 auto;
+}
+
+.aboutUS span{
+  color: var(--pop);
 }
 
 .aboutUS-container h1{
@@ -369,6 +374,7 @@ input:checked + .slider:before {
   line-height: 120%;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 10%;
 }
 
 .aboutUS-container p{
@@ -381,27 +387,7 @@ input:checked + .slider:before {
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.02em;
-}
-
-.aboutUS-container ul{
-  color: white;
-  width: 100%;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  padding-left: 100px;
-}
-
-@media screen and (max-width: 992px) {
-  .aboutUs-container ul, li{
-    color: white !important;
-    text-size-adjust: 24px;
-    flex-direction: column;
-  }
+  text-align: center;
 }
 
 /* fact section  */
