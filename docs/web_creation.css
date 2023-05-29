@@ -210,6 +210,7 @@ font-size: 2.5rem;
   }
   
   .home-hero2_subtext{
+    padding-left: 20%;
     color: white;
   }
   
@@ -223,12 +224,14 @@ font-size: 2.5rem;
   }
   
   .home-hero2_text h1 {
+    padding-left: 9%;
     color: #ffffff;
     font-size: 2.5rem;
     width: 100%;
     max-width: 500px;
     font-weight: 800;
     font-size: 2.5rem;
+    display: flex;
   }
   
   
