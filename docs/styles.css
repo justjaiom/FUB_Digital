@@ -1,14 +1,14 @@
 @import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
 body {
   --primary:#FF0460;  
-  --secondary:#FFCE00;
-  --pop:#1c27f5;
-
-  /* POTENTIAL REPLACEMENT
-  --primary:#FF0460;  
   --secondary:#1a73cd;
   --pop:#2ec4b6;  
-  */
+
+  /* OLD VERSION
+  --primary:#FF0460;  
+  --secondary:#FFCE00;
+  --pop:#1c27f5; */
+  
 }
 body.dark-theme{
   --primary: #296191 ;
