@@ -4,16 +4,19 @@ body {
   --secondary:#FFCE00;
   --pop:#1c27f5;
 
-  /* --primary:#FF0460;  
+  /* POTENTIAL REPLACEMENT
+  --primary:#FF0460;  
   --secondary:#1a73cd;
-  --pop:#2ec4b6; */
+  --pop:#2ec4b6;  
+  */
 }
 body.dark-theme{
   --primary: #296191 ;
   --secondary: #f8446e;
   --pop: #75d0af;
 
-  /* --primary: #8bc27f ;
+  /* OLD VERSION
+  --primary: #8bc27f ;
   --secondary: #2ec4b6;
   --pop: #c2ba61; */
 }
