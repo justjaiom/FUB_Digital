@@ -1,13 +1,13 @@
 @import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
 body {
   --primary:#FF0460;  
-  --secondary:#1a73cd;
-  --pop:#2ec4b6;  
-
-  /* OLD VERSION
-  --primary:#FF0460;  
   --secondary:#FFCE00;
-  --pop:#1c27f5; */
+  --pop:#1c27f5; 
+
+  /* goofy VERSION
+  --primary:#FF0460;  
+  --secondary:#1a73cd;
+  --pop:#2ec4b6;   */
   
 }
 body.dark-theme{
@@ -15,7 +15,7 @@ body.dark-theme{
   --secondary: #f8446e;
   --pop: #75d0af;
 
-  /* OLD VERSION
+  /* goofy VERSION
   --primary: #8bc27f ;
   --secondary: #2ec4b6;
   --pop: #c2ba61; */
@@ -359,9 +359,7 @@ input:checked + .slider:before {
   margin: 0 auto;
 }
 
-.aboutUS span{
-  color: var(--pop);
-}
+
 
 .aboutUS-container h1{
   color: var(--primary);
