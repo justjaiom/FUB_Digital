@@ -4,7 +4,7 @@ body {
   --secondary:#FFCE00;
   --pop:#1c27f5; 
 
-  /* goofy VERSION
+  /* BETTER VERSION
   --primary:#FF0460;  
   --secondary:#1a73cd;
   --pop:#2ec4b6;   */
@@ -15,7 +15,7 @@ body.dark-theme{
   --secondary: #f8446e;
   --pop: #75d0af;
 
-  /* goofy VERSION
+  /* Old VERSION
   --primary: #8bc27f ;
   --secondary: #2ec4b6;
   --pop: #c2ba61; */
@@ -162,8 +162,6 @@ input:checked + .slider:before {
 .custom-shape-divider-bottom-1684686974 .shape-fill {
   fill: rgb(18, 18, 18);
 }
-
-
 
   /* hompage hero  */
 
@@ -355,14 +353,12 @@ input:checked + .slider:before {
   padding: 80px 90px;
   display: flex;
   align-items: center;
-  padding: 10%;
+  padding: 5%;
   margin: 0 auto;
 }
 
-
-
 .aboutUS-container h1{
-  color: var(--primary);
+  color: var(--secondary);
   width: 100%;
   font-family: "SharpSansNo1-Extrabold", sans-serif;
   font-size: 2rem;
@@ -373,6 +369,10 @@ input:checked + .slider:before {
   letter-spacing: 0.02em;
   text-align: center;
   padding-bottom: 10%;
+}
+
+.aboutUS-container h1 span{
+  color: var(--primary);
 }
 
 .aboutUS-container p{
@@ -422,6 +422,7 @@ input:checked + .slider:before {
     letter-spacing: 0.02em;
     color: var(--primary);
     z-index: 1;
+    text-align: center;
   }
   
   .fact-item {
@@ -437,6 +438,7 @@ input:checked + .slider:before {
     filter: drop-shadow(0px 8px 20px rgba(255, 4, 96, 0.15));
     position: relative;
     box-sizing: border-box;
+    border-radius: 25px;
   }
 
   .fact-item:hover{
