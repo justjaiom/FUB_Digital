@@ -90,9 +90,8 @@ font-size: 2.5rem;
 .web-creation-hero p{
   font-size: 1rem;
 }
-
-
 }
+
 .half-web-creation {
   margin: 0;
   width: 100%;
@@ -191,8 +190,6 @@ font-size: 2.5rem;
   .web_creations-hero2 {
     height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -220,7 +217,7 @@ font-size: 2.5rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    text-align: left;
+    text-align: center;
   }
   
   .home-hero2_text h1 {
@@ -238,14 +235,11 @@ font-size: 2.5rem;
   .home-hero2_text h1 {
     font-size: 72px;
     margin-bottom: 32px;
-    line-height: 1.17;
+    line-height: 1.2;
     color: var(--primary);
   }
 
   .home-hero2_text h1 span {
-    font-size: 72px;
-    margin-bottom: 32px;
-    line-height: 1.17;
     color: var(--pop);
   }
 
@@ -286,6 +280,7 @@ font-size: 2.5rem;
     font-size: 50px;
     padding-top: 5%;
     margin-bottom: 32px;
+    font-weight: 700;
     width: 100%;
     color: var(--primary);
     text-align: center;
