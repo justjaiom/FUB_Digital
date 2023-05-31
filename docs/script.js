@@ -1,13 +1,6 @@
 const navToggleBtn = document.querySelector('.navbar-toggler');
 const navCollapseDiv = document.querySelector('.navbar-collapse');
 
-if (navToggleBtn) {
-  navToggleBtn.addEventListener('click', () => {
-    navCollapseDiv.classList.toggle('showNavbar');
-    navToggleBtn.classList.toggle('showNavbar-toggler');
-  });
-}
-
 
 navToggleBtn.addEventListener('click', () => {
     navCollapseDiv.classList.toggle('showNavbar');
