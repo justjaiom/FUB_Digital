@@ -83,6 +83,7 @@ body {
 
 }
 
+
 .grid-item:hover:after {
   content: attr(data-hover-text);
   position: absolute;
@@ -124,17 +125,8 @@ body {
 
   .grid-item {
     flex-basis: calc(100% - 20px);
+    
   }
-  .grid-item:after{
-    content: attr(data-hover-text);
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-   font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px ;
-  }
+  
 }
 

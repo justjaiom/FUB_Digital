@@ -275,11 +275,11 @@ nav ul li:hover ul.sub-nav {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-
+/* 
     .navbar-toggler:hover {
         background-color: black;
         color: #fff;
-    }
+    } */
 
     .header-btns {
         margin: 0;
