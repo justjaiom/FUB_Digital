@@ -1,5 +1,12 @@
-@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
-body {
+@font-face {
+  font-family: 'SharpSansNo1-Extrabold';
+  src: url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff2') format('woff2'),
+       url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff') format('woff'),
+       url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.ttf') format('truetype');
+  /* ... additional font properties ... */
+}
+
+  body {
   --primary:#FF0460;  
   --secondary:#FFCE00;
   --pop:#1c27f5; 
@@ -33,7 +40,7 @@ body.dark-theme{
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;  
     text-rendering: optimizelegibility;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
     border: none;
 
 }
@@ -288,7 +295,7 @@ input:checked + .slider:before {
     padding: 17px 32px;
     background: var(--pop);
     color: white;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 2px;
@@ -360,7 +367,7 @@ input:checked + .slider:before {
 .aboutUS-container h1{
   color: var(--secondary);
   width: 100%;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-family: 'SharpSansNo1-Extrabold';
   font-size: 2rem;
   font-style: normal;
   font-weight: 800;
@@ -378,7 +385,7 @@ input:checked + .slider:before {
 .aboutUS-container p{
   color: white;
   width: 100%;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-family: 'SharpSansNo1-Extrabold';
   font-size: 2rem;
   font-style: normal;
   font-weight: 800;
@@ -413,7 +420,7 @@ input:checked + .slider:before {
   .fact-header {
     grid-column: 1/-1;
     width: 100%;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
     font-size: 2rem;
     font-style: normal;
     font-weight: 800;

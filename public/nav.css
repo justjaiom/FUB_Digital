@@ -1,5 +1,13 @@
-@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
-:root {
+@font-face {
+    font-family: 'SharpSansNo1-Extrabold';
+    src: url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff2') format('woff2'),
+         url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff') format('woff'),
+         url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.ttf') format('truetype');
+    /* ... additional font properties ... */
+  }
+  
+  
+  :root {
     --primary-color: #2d2c62;
 
 }
@@ -9,14 +17,14 @@
     margin: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
 }
 
 
 
 body{
     background: white;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
 
 
 }
@@ -24,11 +32,11 @@ body{
 a {
     color: var(--primary-color);
     text-decoration: none;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
 }
 .dropdown{
     width: auto;
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'SharpSansNo1-Extrabold';
   overflow-x: visible !important;
 
 
@@ -55,11 +63,11 @@ a {
 
 .nav-link {
     transition: color 0.3s ease-in-out;
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'SharpSansNo1-Extrabold';
   }
   
   .sub-nav li a {
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'SharpSansNo1-Extrabold';
   }
   
 
@@ -80,7 +88,7 @@ a {
 .navbar-brand {
     font-size: 29px;
     font-weight: 600;
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'SharpSansNo1-Extrabold';
 
 }
 
@@ -102,7 +110,7 @@ a {
 }
 
 .nav-link {
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -133,7 +141,7 @@ a {
 
 /* dropdown */
 nav ul li {
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'SharpSansNo1-Extrabold';
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
