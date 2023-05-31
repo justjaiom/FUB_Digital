@@ -723,7 +723,6 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
-@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
 *{
   margin: 0;
   padding: 0;
