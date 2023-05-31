@@ -1,7 +1,4 @@
-@font-face {font-family: "Sharp Sans No1 Extrabold"; src: url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.eot"); src: url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff") format("woff"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.svg#Sharp Sans No1 Extrabold") format("svg"); }
-
-@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
   
   :root {
     --primary-color: #2d2c62;
@@ -13,14 +10,14 @@
     margin: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
 }
 
 
 
 body{
     background: white;
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
 
 
 }
@@ -28,11 +25,11 @@ body{
 a {
     color: var(--primary-color);
     text-decoration: none;
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
 }
 .dropdown{
     width: auto;
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
   overflow-x: visible !important;
 
 
@@ -59,11 +56,11 @@ a {
 
 .nav-link {
     transition: color 0.3s ease-in-out;
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
   }
   
   .sub-nav li a {
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
   }
   
 
@@ -84,7 +81,7 @@ a {
 .navbar-brand {
     font-size: 29px;
     font-weight: 600;
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -106,7 +103,7 @@ a {
 }
 
 .nav-link {
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -137,7 +134,7 @@ a {
 
 /* dropdown */
 nav ul li {
-    font-family: 'SharpSansNo1-Extrabold';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
