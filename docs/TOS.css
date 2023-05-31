@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+
 #canvas{
     width: 500px;
   }
@@ -30,7 +33,7 @@
     font-weight: 400;
     line-height: 1.17;
     margin: 0;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +48,7 @@
     margin-bottom: 32px;
     line-height: 1.17;
     margin: 0;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -75,7 +78,7 @@
 
   .TOS-list h1 {
     color: var(--secondary);
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     font-size: 24px;
     font-weight: 700;
@@ -85,7 +88,7 @@
   
   .TOS-list h2 {
     color: black;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     font-size: 24px;
     font-weight: 600;

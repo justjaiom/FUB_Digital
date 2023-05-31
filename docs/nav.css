@@ -1,5 +1,6 @@
-@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+  
+  :root {
     --primary-color: #2d2c62;
 
 }
@@ -9,14 +10,14 @@
     margin: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 
 body{
     background: white;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 
 }
@@ -24,11 +25,11 @@ body{
 a {
     color: var(--primary-color);
     text-decoration: none;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .dropdown{
     width: auto;
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
   overflow-x: visible !important;
 
 
@@ -55,11 +56,11 @@ a {
 
 .nav-link {
     transition: color 0.3s ease-in-out;
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
   }
   
   .sub-nav li a {
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
   }
   
 
@@ -80,7 +81,7 @@ a {
 .navbar-brand {
     font-size: 29px;
     font-weight: 600;
-    font-family: 'Sharp Sans No1 Extrabold', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -102,7 +103,15 @@ a {
 }
 
 .nav-link {
-    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.757);
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-link:hover {
@@ -125,6 +134,15 @@ a {
 
 /* dropdown */
 nav ul li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.757);
+    transition: all 0.2s ease-in-out;
     text-align: center;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -258,11 +276,11 @@ nav ul li:hover ul.sub-nav {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-
+/* 
     .navbar-toggler:hover {
         background-color: black;
         color: #fff;
-    }
+    } */
 
     .header-btns {
         margin: 0;

@@ -1,4 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
 
 
@@ -11,7 +11,7 @@
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -56,7 +56,7 @@
   font-weight: 600;
   line-height: 1.17;
   margin: 0;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@
   margin-bottom: 32px;
   line-height: 1.17;
   margin: 0;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -95,7 +95,7 @@ font-size: 2.5rem;
 .half-web-creation {
   margin: 0;
   width: 100%;
-  font-family: "SharpSansNo1-Extrabold", sans-serif;
+  font-family: 'Poppins', sans-serif;
   min-height: 70vh;
   font-weight: 600;
   font-size: 16px;
@@ -213,7 +213,7 @@ font-size: 2.5rem;
   
   .home-hero2_text {
     display: flex;
-    font-family: "SharpSansNo1-Extrabold", "sans-serif";
+    font-family: 'Poppins', sans-serif;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -245,7 +245,7 @@ font-size: 2.5rem;
 
 
   .web_creations_offering-title {
-    font-family: "SharpSansNo1-Extrabold", "sans-serif";
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 500px;
     padding-left: 5%;
@@ -257,14 +257,14 @@ font-size: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 500px;
     background-color: white;
   }
   
   .Building_web_title h1 {
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -275,7 +275,7 @@ font-size: 2.5rem;
   
   
   .title_web_creations h1 {
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     font-size: 50px;
     padding-top: 5%;
@@ -287,7 +287,7 @@ font-size: 2.5rem;
   }
   
   .web_creations_offer h2 {
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     color: black;
     margin-bottom: 8px;
@@ -295,7 +295,7 @@ font-size: 2.5rem;
   }
   
   .web_creations_offer p {
-    font-family: "SharpSansNo1-Extrabold", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #333333;
     line-height: 24px;
