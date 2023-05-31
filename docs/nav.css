@@ -1,11 +1,7 @@
-@font-face {
-    font-family: 'SharpSansNo1-Extrabold';
-    src: url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff2') format('woff2'),
-         url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff') format('woff'),
-         url('https://db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.ttf') format('truetype');
-    /* ... additional font properties ... */
-  }
-  
+@font-face {font-family: "Sharp Sans No1 Extrabold"; src: url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.eot"); src: url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.woff") format("woff"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8bae8ac7ec8f35d5eff04dd7d4b528b0.svg#Sharp Sans No1 Extrabold") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/8bae8ac7ec8f35d5eff04dd7d4b528b0?family=Sharp+Sans+No1+Extrabold);
+
   
   :root {
     --primary-color: #2d2c62;
