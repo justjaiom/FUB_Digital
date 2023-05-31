@@ -71,66 +71,73 @@ font-size: 2.5rem;
   }
 }
 
-.social-media-service{
+
+
+.social-media{
   background: #121212;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 24px;
   padding: 20px 0 20px 0;
-  font-family: "open_sansregular", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.social-media-service-icons{
-  max-width: 1440px;
-  margin: 20px auto;
-  padding: 60px 0;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 30px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 28px;
-  line-height: 34px;
-  text-transform: uppercase;
-}
-
-.social-media-service-icons a{
-  color: white;
-}
-
-.social-media-service-heading{
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.social-media-service-heading h2 {
+.social-media h2{
   padding: 30px 0;
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
-.social-media-service-heading p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+
+.social-media-heading{
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
-@media only screen and (max-width: 600px){
-  .social-media-service-heading{
-    width: 80%;
-  }
-  .social-media-service-icons {
-    flex-direction: column;
-    align-items: center;
+
+.social-media-grid {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.social-media-item {
+  border-radius: 10px;
+  padding: 20px;
+  margin: .5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-item i {
+  font-size: 5rem;
+}
+
+
+@media (min-width: 700px) {
+  .social-media-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (max-width: 699px) {
+  .social-media-grid {
+    grid-template-columns: 1fr;
+  }
+  .social-media-item{
+    margin: 10px 30px;
+  }
+  .social-media-heading{
+    max-width: 80%;
+  }
+}
+
 
 .digital_marketing_offering{
   background-color: #121212;
