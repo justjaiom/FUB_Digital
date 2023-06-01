@@ -100,16 +100,19 @@
 
             <textarea name="message" id="message" rows="4"
             placeholder="   Tell us what types of sercices you need listed below"></textarea>
-            <button  id="submit"  class="button-link service-button" type="submit">Submit</button>
+            <button  id="submit"  class="button-link service-button" >Submit</button>
+
         </form>
         
-
-        <div class="popup" id="popup">
+        <dialog id="popup">
+          <form method="dialog">
             <img src="imgs/check.png" alt="">
-            <h2>Thank You</h2>
-            <p>Your info has been submitted! check your inbox for a message from us</p>
-            <button type="button" onclick="closePopup();" ;">OK</button>
-        </div>
+            <h1>Message Sent!</h1>
+            <button>Close</button>
+          </form>
+        </dialog>
+        
+       
 
       </section>
 
@@ -126,6 +129,7 @@
             <a href="digital_marketing.html" class="card" id="yellow">Auto Google Reviews</a>
         </div>
       </section>
+      
     </main>
     <footer>
         <div class="content">

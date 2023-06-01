@@ -46,18 +46,11 @@ function SendMail() {
         marketing: document.getElementById("marketing").checked,
     }
     emailjs.send("service_qrj6ggp", "template_2bbd5jv", params).then(function (res) {
-       openPopup()
+      popup.showModal()
     })
 }
 
 let popup = document.getElementById("popup")
-
-function openPopup() {
-    popup.classList.add("open-popup");
-}
-function closePopup() {
-    popup.classList.remove("open-popup");
-}
 
 
 $('#form').on('submit',function (e) {
