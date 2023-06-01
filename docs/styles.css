@@ -884,3 +884,8 @@ footer .content .media-icons a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .custom-shape-divider-bottom-1684686974 {
+    display: none;
+  }
+}
