@@ -56,9 +56,6 @@ a {
     transition: color 0.3s ease-in-out;
   }
   
-  .sub-nav li a {
-  }
-  
 
 
 .navbar {
@@ -197,9 +194,15 @@ nav ul li:hover ul.sub-nav {
 
 @media screen and (max-width: 992px) {
 
-    nav ul li ul.sub-nav li{
-        margin-top: 30px;
+    .dropdown{
+        content-visibility: hidden;
+        margin: -90;
     }
+
+    .sub-nav{
+        visibility: visible;
+    }
+
     .navbar-toggler {
         display: block;
     }
@@ -228,7 +231,7 @@ nav ul li:hover ul.sub-nav {
         justify-content: flex-start;
         background-color: black;
         height: 100%;
-        width: 320px;
+        width: 100%;
         transform: translateX(100%);
         z-index: 999;
     }
@@ -237,11 +240,6 @@ nav ul li:hover ul.sub-nav {
         display: block;
         margin: 80px 0;
         text-align: center;
-    }
-
-    .navbar-nav {
-        margin-top: 80px;
-
     }
 
     .nav-link {
@@ -291,12 +289,11 @@ nav ul li:hover ul.sub-nav {
         position: relative;
         top: 20px;
         left: 50%;
-        transform: translateX(-40%);
         width: 100%;
         background: transparent;
-        content-visibility: hidden;
+        content-visibility: visible;
         border: none;
-        opacity: 0;
+        opacity: 1;
         box-shadow: none;
     }
     /* fix the sub nav elements */
@@ -308,13 +305,12 @@ nav ul li:hover ul.sub-nav {
         margin-bottom: 50px;
     }
 
-
-    nav ul li:hover ul.sub-nav {
-        content-visibility: visible;
-        opacity: 1;
-        margin-bottom: 40px;
+    .sub-nav li:first-child{
+        margin-top: -50px;
 
     }
+
+
 
     .dropdown::after{
         content: none;
