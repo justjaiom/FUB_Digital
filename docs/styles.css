@@ -82,7 +82,15 @@ dialog h1 {
   font-size: 3rem;
   color: var(--primary);
   margin-top: 5%;
+  font-weight: 700;
 }
+dialog a {
+  font-style: normal;
+  color: var(--pop);
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
 
 dialog img {
   margin: 0 auto;
