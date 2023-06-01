@@ -24,6 +24,7 @@ body {
 
 .ourwork-hero{
   background: transparent;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,26 +32,48 @@ body {
 
 .ourwork-hero_container{
     background-color: white;
-    height: 50vh;
+    height: 50dvh;
     display: flex;; 
     background:transparent;
     text-align: center;
+    margin-bottom: 5vh;
+
 
 }
 
-.home-hero_text h1{
-    font-size: 72px;
-    margin-top: 20%;
-    line-height: 1.17;
-    color: whtie;
-    max-width: 800px;
+.our-work-hero_text h1{
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 800;
+  margin-top: 20%;
+  line-height: 1.17;
+  color: whtie;
+  max-width: 800px;
     
 }
+@media only screen and (max-width: 500px){
+  .our-work-hero_text h1{
+    font-size: 2.5rem;
+  }
+  .ourwork-hero_container{
+    margin-bottom: 0;
+  }
 
-.home-hero_subtext{
+  .sub-sub-text{
+    margin-top: 5%;
+  }
+
+}
+
+
+.our-work-hero_subtext{
     color: white;
     font-family: 'Poppins', sans-serif;
     max-width: 800px;
+}
+
+.sub-sub-text{
+  line-height: 1.5rem;
 }
 
 

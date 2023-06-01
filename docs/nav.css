@@ -11,13 +11,13 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Poppins', sans-serif;
+
 }
 
 
 
 body{
     background: white;
-    font-family: 'Poppins', sans-serif;
 
 
 }
@@ -25,11 +25,9 @@ body{
 a {
     color: var(--primary-color);
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
 }
 .dropdown{
     width: auto;
-    font-family: 'Poppins', sans-serif;
   overflow-x: visible !important;
 
 
@@ -56,11 +54,9 @@ a {
 
 .nav-link {
     transition: color 0.3s ease-in-out;
-    font-family: 'Poppins', sans-serif;
   }
   
   .sub-nav li a {
-    font-family: 'Poppins', sans-serif;
   }
   
 
@@ -81,7 +77,6 @@ a {
 .navbar-brand {
     font-size: 29px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -103,7 +98,6 @@ a {
 }
 
 .nav-link {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -134,7 +128,6 @@ a {
 
 /* dropdown */
 nav ul li {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;

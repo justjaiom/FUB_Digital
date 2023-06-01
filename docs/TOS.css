@@ -5,7 +5,7 @@
     width: 500px;
   }
   .TOS-hero{
-    height: 75vH;
+    height: 75dvh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -33,7 +33,6 @@
     font-weight: 400;
     line-height: 1.17;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +47,6 @@
     margin-bottom: 32px;
     line-height: 1.17;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -78,7 +76,6 @@
 
   .TOS-list h1 {
     color: var(--secondary);
-    font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     font-size: 24px;
     font-weight: 700;
@@ -88,7 +85,6 @@
   
   .TOS-list h2 {
     color: black;
-    font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     font-size: 24px;
     font-weight: 600;
