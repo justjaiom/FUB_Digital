@@ -585,6 +585,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
 }
 
 .half_text-left {
