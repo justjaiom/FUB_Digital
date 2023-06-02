@@ -18,6 +18,10 @@ body {
 
 }
 
+main{
+  background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
+}
+
 
 
 
