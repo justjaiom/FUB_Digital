@@ -82,22 +82,17 @@ function setThemePreference(theme) {
 }
 
 // Function to toggle the theme
-function setThemePreference(theme) {
-  document.cookie = `theme=${theme}; path=/;`;
-}
-
-// Function to toggle the theme
 function toggleTheme() {
   const body = document.body;
   const textBtn = document.getElementById("text-btn");
+  const themeSwitch = document.getElementById("checkbox");
 
-  body.classList.toggle("dark-theme");
-
-  // Update the text based on the theme
-  if (body.classList.contains("dark-theme")) {
+  if (themeSwitch.checked) {
+    body.classList.add("dark-theme");
     textBtn.textContent = "Too Boring?";
     setThemePreference("dark");
   } else {
+    body.classList.remove("dark-theme");
     textBtn.textContent = "Too Bright?";
     setThemePreference("bright");
   }
@@ -120,11 +115,15 @@ const storedTheme = getThemePreference();
 if (storedTheme === "dark") {
   document.body.classList.add("dark-theme");
   document.getElementById("text-btn").textContent = "Too Boring?";
+  document.getElementById("checkbox").checked = true;
 }
 
 // Toggle theme and update text when the checkbox is clicked
 const themeSwitch = document.getElementById("checkbox");
 themeSwitch.addEventListener("change", toggleTheme);
+
+
+
 
 function addDashPhone() {
   var inputValue = document.getElementById("phone").value;
