@@ -70,40 +70,34 @@
       </section>
 
       <section class="form-container">
-        <form id="form">
+        <form action="https://script.google.com/macros/s/AKfycbw8Dk2QTW8sjoyfOB7cqFFbnqxCHYQCeofloXkJgzuXDOcH33dsLFrG4PT59N9nnBhSzg/exec" method="POST" id="form">
           <div class="center">
-
             <div class="input">
-                <input type="text" id="from_name" placeholder="First Name" pattern="[A-Za-z ]+" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32" required>
-                <input type="text" id="lname" placeholder="Last Name" pattern="[A-Za-z ]+" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32" required>
+              <input type="text" name="fname" id="from_name" placeholder="First Name" pattern="[A-Za-z ]+" required>
+              <input type="text" name="lname" id="lname" placeholder="Last Name" pattern="[A-Za-z ]+" required>
             </div>
-
             <div class="input">
-                <input type="email" id="email_id" placeholder="Your Email" required>
-                <input type="text" id="phone" placeholder="Phone" oninput="this.value = this.value.replace(/[^\d-]/g, ''); addDashPhone();" onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.key === '-';" maxlength="12" required>
-                <div class="extra">
-                  <input class="extra" type="text" id="web_url" placeholder="Current Website?">
-                </div>
-
-            <div class="checkboxs">
+              <input type="email" name="email" id="email_id" placeholder="Your Email" required>
+              <input type="text" name="phone" id="phone" placeholder="Phone" oninput="this.value = this.value.replace(/[^\d-]/g, ''); addDashPhone();" maxlength="12" required>
+              <div class="extra">
+                <input class="extra" name="web" type="text" id="web_url" placeholder="Current Website?">
+              </div>
+              <div class="checkboxs">
                 <label>What General Service(s) Do You Need?</label>
                 <div>
-                    <input type="checkbox" id="web_creation" name="web_creation">
-                    <label for="web_creation">Website Creation</label>
+                  <input type="checkbox" id="web_creation" name="wc" value="Website Creation">
+                  <label for="web_creation">Website Creation</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="marketing" name="marketing">
-                    <label for="marketng">Digital Marketing</label>
+                  <input type="checkbox" id="marketing" name="dm" value="Digital Marketing">
+                  <label for="marketing">Digital Marketing</label>
                 </div>
+              </div>
             </div>
+            <textarea name="message" id="message" rows="4" placeholder="Tell us what types of services you need listed below"></textarea>
+            <button id="submit" class="button-link service-button">Submit</button>
           </div>
-
-            <textarea name="message" id="message" rows="4"
-            placeholder="   Tell us what types of sercices you need listed below"></textarea>
-            <button  id="submit"  class="button-link service-button" >Submit</button>
-
         </form>
-        
         <dialog id="popup">
           <form method="dialog">
             <img src="imgs/check.png" alt="">
@@ -111,10 +105,32 @@
             <button>Close</button>
           </form>
         </dialog>
-        
-       
-
       </section>
+      
+      <script>
+        // Add event listener to the form submit button
+        document.getElementById("submit").addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          // Send the form data to the server using fetch API
+          fetch("https://script.google.com/macros/s/AKfycbw8Dk2QTW8sjoyfOB7cqFFbnqxCHYQCeofloXkJgzuXDOcH33dsLFrG4PT59N9nnBhSzg/exec", {
+              method: "POST",
+              body: new FormData(document.getElementById("form"))
+            })
+            .then(response => {
+              if (response.ok) {
+                console.log("Success: Message sent");
+                // Show the success dialog or perform any other actions
+                document.getElementById("popup").showModal();
+              } else {
+                console.error("Error: Message failed to send");
+              }
+            })
+            .catch(error => {
+              console.error("Error: ", error);
+            });
+        });
+      </script>
 
       <section class="services">
         <div class="services-heading">
