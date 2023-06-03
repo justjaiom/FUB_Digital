@@ -56,7 +56,25 @@ let popup = document.getElementById("popup")
 document.getElementById("form").addEventListener("submit", function(e) {
   e.preventDefault();
   SendMail();
+            // Send the form data to the server using fetch API
+            fetch("https://script.google.com/macros/s/AKfycbz7qgM_sQvAq0_rlOt5aMhvr69iLS454Kk7VY2t1N7IRDrTf2AeMdP07yXEAYV-5jeBSg/exec", {
+              method: "POST",
+              body: new FormData(document.getElementById("form"))
+            })
+            .then(response => {
+              if (response.ok) {
+                console.log("Success: Message sent");
+                // Show the success dialog or perform any other actions
+                document.getElementById("popup").showModal();
+              } else {
+                console.error("Error: Message failed to send");
+              }
+            })
+            .catch(error => {
+              console.error("Error: ", error);
+            });
   document.getElementById("form").reset();
+
   
   });
 
