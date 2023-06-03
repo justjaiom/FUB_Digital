@@ -1,5 +1,5 @@
 // Get all elements with the classes that need animation
-const elements = document.querySelectorAll('.fade-in-left, .fade-in-up, .fade-in, .fadeintop, .fadeinbottomleft, .fadeintopright, .fadeinbottom, .fadeinbottomright');
+const elements = document.querySelectorAll('.fade-in-left, .fade-in-right, .fade-in-up, .fade-in, .fadeintop, .fadeinbottomleft, .fadeintopright, .fadeinbottom, .fadeinbottomright');
 
 // Create a new Intersection Observer
 const observer = new IntersectionObserver((entries, observer) => {
@@ -11,6 +11,9 @@ const observer = new IntersectionObserver((entries, observer) => {
       // Add the animation class to the current element based on its class
       if (entry.target.classList.contains('fade-in-left')) {
         entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+      }
+      if (entry.target.classList.contains('fade-in-right')) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
       }
       if (entry.target.classList.contains('fade-in-up')) {
         entry.target.classList.add('animate__animated', 'animate__fadeInUp');
