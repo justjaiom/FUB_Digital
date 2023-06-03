@@ -111,10 +111,6 @@ main{
   transition: .5s;
 }
 
-.grid-item:hover{
-  scale: 1.05;
-
-}
 
 
 .grid-item:hover:after {
@@ -130,6 +126,7 @@ main{
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0.415);
   border-radius: 5px;
+  display: inline-block;
 
 }
 
@@ -139,6 +136,7 @@ main{
   object-fit: cover;
   vertical-align: middle;
 }
+
 
 /* Responsive adjustments */
 @media screen and (max-width: 1480px) {
