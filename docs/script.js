@@ -53,16 +53,12 @@ function SendMail() {
 let popup = document.getElementById("popup")
 
 
-$('#form').on('submit',function (e) {
-    e.preventDefault();
-    SendMail()
-    document.getElementById("form").reset();
-
-    console.log('done')
- 
- }
-
-)
+document.getElementById("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  SendMail();
+  document.getElementById("form").reset();
+  
+  });
 
 
 // Function to set the theme preference as a cookie
