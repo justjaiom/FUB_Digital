@@ -1,4 +1,10 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap'); */
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+    font-display: swap;
+
+  }
 
   body {
   --primary:#FF0460;  
@@ -42,9 +48,9 @@ body.dark-theme{
 
 main{
   overflow-x: hidden;
-  width: min(65ch, 100%-4rem);
   margin-inline: auto;
   line-height: 120%;
+  background: #121212;
 
 }
 
@@ -82,7 +88,15 @@ dialog h1 {
   font-size: 3rem;
   color: var(--primary);
   margin-top: 5%;
+  font-weight: 700;
 }
+dialog a {
+  font-style: normal;
+  color: var(--pop);
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
 
 dialog img {
   margin: 0 auto;
@@ -529,6 +543,11 @@ input:checked + .slider:before {
   }
   
   @media only screen and (max-width: 600px) {
+    .fact-section{
+      margin:  auto;
+      width: min-content;
+      padding: 0;
+    }
     .fact-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -571,6 +590,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
 }
 
 .half_text-left {
