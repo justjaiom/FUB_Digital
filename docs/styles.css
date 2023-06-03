@@ -42,7 +42,6 @@ body.dark-theme{
 
 main{
   overflow-x: hidden;
-  width: min(65ch, 100%-4rem);
   margin-inline: auto;
   line-height: 120%;
   background: #121212;
