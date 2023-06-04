@@ -76,6 +76,33 @@ $("#form").on("submit", function (e) {
   document.getElementById("form").reset();
 });
 
+// Newsletter
+document.getElementById('newsletter').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  const form = event.target;
+  const formData = new FormData(form);
+
+  // Clear the form
+  form.reset();
+
+  fetch("https://script.google.com/macros/s/AKfycby7zGUaPMbJMejo3jArjsFYQmkM_fE9R-6OqDPVOR48FPHg-tKLYDzpObxkcX5sdICP0g/exec", {
+    method: "POST",
+    body: formData,
+  })
+    .then(function(response) {
+      if (response.ok) {
+        console.log("Success: Message sent");
+        // Show the success dialog or perform any other actions
+      } else {
+        console.error("Error: Message failed to send");
+      }
+    })
+    .catch(function(error) {
+      console.error('Error:', error);
+    });
+});
+
 // Function to set the theme preference as a cookie
 function setThemePreference(theme) {
   document.cookie = `theme=${theme}; path=/;`;
