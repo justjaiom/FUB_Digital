@@ -825,7 +825,7 @@ footer{
   position: bottom;
   bottom: 0;
   left: 0;
-  background: black;
+  background: #121212;
 }
 footer .content{
   max-width: 1350px;
