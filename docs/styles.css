@@ -7,16 +7,18 @@
   }
 
   body {
-  --primary:#FF0460;  
-  --secondary:#1a73cd;
-  --pop:#2ec4b6;   
+    --primary:#FF0460;  
+  --secondary:#FFCE00;
+  --pop:#1c27f5;
+
+}
 
   /* OLD VERISON
-  --primary:#FF0460;  
-  --secondary:#FFCE00;
-  --pop:#1c27f5;  */
+    --primary:#FF0460;  
+  --secondary:#1a73cd;
+  --pop:#2ec4b6; 
+  */
   
-}
 body.dark-theme{
   --primary: #296191 ;
   --secondary: #f8446e;
