@@ -737,6 +737,13 @@ input:checked + .slider:before {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
   }
   @media only screen and (max-width: 600px){
     .services-heading{

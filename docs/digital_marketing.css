@@ -96,17 +96,22 @@ font-size: 2.5rem;
   color: var(--primary);
 }
 .social-media p{
-  padding-bottom: 5% ;
-  padding-right: 25%;
-  padding-left: 25%;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   font-style: normal;
-  text-align: center;
   font-size: 18px;
   font-weight: 400;
   color: white;
   line-height: 24px;
   font-weight: 400;
   letter-spacing: 0.02em;
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 10%;
 }
 
 .social-media-heading{
