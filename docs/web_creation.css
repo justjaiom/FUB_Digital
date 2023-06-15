@@ -114,7 +114,8 @@ font-size: 2.5rem;
 
 .half-web-creation_text-left {
   background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
-
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   margin: 0;
   padding: 80px;
   border: 0;
