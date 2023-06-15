@@ -9,9 +9,6 @@
   body {
 
   --primary:#FF0460;  
-  --secondary:#FFCE00;
-  --pop:#1c27f5;
-  --primary:#FF0460;  
   --secondary:#1a73cd;
   --pop:#29d9c7; 
 
@@ -19,8 +16,8 @@
 /* 
   OLD VERISON
   --primary:#FF0460;  
-  --secondary:#1a73cd;
-  --pop:#29d9c7; 
+  --secondary:#FFCE00;
+  --pop:#1c27f5;
  */
   
 body.dark-theme{
