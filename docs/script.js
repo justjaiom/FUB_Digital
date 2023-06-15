@@ -77,31 +77,36 @@ $("#form").on("submit", function (e) {
 });
 
 // Newsletter
-document.getElementById('newsletter').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission
+document
+  .getElementById("newsletter")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
 
-  const form = event.target;
-  const formData = new FormData(form);
+    const form = event.target;
+    const formData = new FormData(form);
 
-  // Clear the form
-  form.reset();
+    // Clear the form
+    form.reset();
 
-  fetch("https://script.google.com/macros/s/AKfycby7zGUaPMbJMejo3jArjsFYQmkM_fE9R-6OqDPVOR48FPHg-tKLYDzpObxkcX5sdICP0g/exec", {
-    method: "POST",
-    body: formData,
-  })
-    .then(function(response) {
-      if (response.ok) {
-        console.log("Success: Message sent");
-        // Show the success dialog or perform any other actions
-      } else {
-        console.error("Error: Message failed to send");
+    fetch(
+      "https://script.google.com/macros/s/AKfycby7zGUaPMbJMejo3jArjsFYQmkM_fE9R-6OqDPVOR48FPHg-tKLYDzpObxkcX5sdICP0g/exec",
+      {
+        method: "POST",
+        body: formData,
       }
-    })
-    .catch(function(error) {
-      console.error('Error:', error);
-    });
-});
+    )
+      .then(function (response) {
+        if (response.ok) {
+          console.log("Success: Message sent");
+          // Show the success dialog or perform any other actions
+        } else {
+          console.error("Error: Message failed to send");
+        }
+      })
+      .catch(function (error) {
+        console.error("Error:", error);
+      });
+  });
 
 // Function to set the theme preference as a cookie
 function setThemePreference(theme) {
@@ -148,9 +153,6 @@ if (storedTheme === "dark") {
 // Toggle theme and update text when the checkbox is clicked
 const themeSwitch = document.getElementById("checkbox");
 themeSwitch.addEventListener("change", toggleTheme);
-
-
-
 
 function addDashPhone() {
   var inputValue = document.getElementById("phone").value;

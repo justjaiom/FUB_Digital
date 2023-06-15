@@ -4,9 +4,9 @@
     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
     font-display: swap;
 
-  }
-  
-  :root {
+}
+
+:root {
     --primary-color: #2d2c62;
 
 }
@@ -22,7 +22,7 @@
 
 
 
-body{
+body {
     background: white;
 
 
@@ -32,20 +32,23 @@ a {
     color: var(--primary-color);
     text-decoration: none;
 }
-.dropdown{
+
+.dropdown {
     width: auto;
-  overflow-x: visible !important;
+    overflow-x: visible !important;
 
 
 }
-.dropdown::after{
+
+.dropdown::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f107";    display: grid;
+    content: "\f107";
+    display: grid;
     position: absolute;
     left: 38%;
 
-    
+
 }
 
 .body-container {
@@ -60,8 +63,8 @@ a {
 
 .nav-link {
     transition: color 0.3s ease-in-out;
-  }
-  
+}
+
 
 
 .navbar {
@@ -74,7 +77,8 @@ a {
     position: fixed;
     top: 0;
     z-index: 9999;
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
 }
 
 .navbar-brand {
@@ -149,11 +153,13 @@ nav ul li:hover {
     color: var(--primary);
     box-shadow: inset 0 5px var(--primary);
 }
+
 .sub-nav {
     position: absolute;
     top: 20px;
     left: 0;
-    width: auto; /* change width to auto */
+    width: auto;
+    /* change width to auto */
     background: white;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
     visibility: hidden;
@@ -167,15 +173,18 @@ nav ul li:hover {
 nav ul li ul.sub-nav li {
     color: var(--primary);
     width: 100%;
-    padding: 15px 50px; /* increase padding left and right */
+    padding: 15px 50px;
+    /* increase padding left and right */
     list-style: none;
     max-width: fit-content;
-    box-sizing: border-box; /* include padding in width calculation */
+    box-sizing: border-box;
+    /* include padding in width calculation */
 
 }
-nav ul li ul.sub-nav li :hover{   
+
+nav ul li ul.sub-nav li :hover {
     color: var(--primary);
-    
+
 }
 
 
@@ -183,42 +192,44 @@ nav ul li ul.sub-nav li :hover{
 nav ul li ul.sub-nav li:hover {
     color: var(--primary);
     box-shadow: 0 0;
-    
+
 }
 
 nav ul li:hover ul.sub-nav {
     visibility: visible;
     opacity: 1;
-    
+
 }
+
 @media screen and (max-width: 1200px) {
     .nav-item {
         margin-left: 30px;
-        
+
     }
 }
 
 @media screen and (max-width: 992px) {
 
-    .dropdown{
+    .dropdown {
         content-visibility: hidden;
         margin: -90;
     }
 
-    .sub-nav{
+    .sub-nav {
         visibility: visible;
     }
 
     .navbar-toggler {
         display: block;
     }
-    .navbar{
-        background:white;
+
+    .navbar {
+        background: white;
         /* background: #ffce00; */
 
     }
 
-    nav ul li:hover{
+    nav ul li:hover {
         box-shadow: none;
     }
 
@@ -273,7 +284,8 @@ nav ul li:hover ul.sub-nav {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-/* 
+
+    /* 
     .navbar-toggler:hover {
         background-color: black;
         color: #fff;
@@ -302,26 +314,27 @@ nav ul li:hover ul.sub-nav {
         opacity: 1;
         box-shadow: none;
     }
+
     /* fix the sub nav elements */
     .sub-nav li {
         color: var(--primary-color);
         width: 100%;
         list-style: none;
-        max-width: fit-content; 
+        max-width: fit-content;
         margin-bottom: 50px;
     }
 
-    .sub-nav li:first-child{
+    .sub-nav li:first-child {
         margin-top: -50px;
 
     }
 
 
 
-    .dropdown::after{
+    .dropdown::after {
         content: none;
     }
-    
+
 
     a {
         color: white;

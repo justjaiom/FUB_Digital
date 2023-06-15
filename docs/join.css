@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizelegibility;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -17,132 +17,136 @@
 
 
 
-.join-hero{
-    background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
-    color: #FFFFFF;
-    font-size: 16px;
-    height: 100dvh;
-    line-height: 24px;
-    padding: 20px 0 20px 0;
-    display: flex;
-    align-items: center;
-
-  }
-
-  .join-hero-heading{
-    max-width: 100%;
-    width: auto;
-    margin: 0 auto;
-    text-align: center;
-
-  }
-
-  .join-hero-heading h2 {
-    padding: 30px 0;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    color: black;
-  }
-
-
-  .service-button{
-    margin: 400px ;
-
-  }
-
-
-
-
-  
-.form-container{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(18, 18, 18);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-bottom: 20px;
-    padding-top: 40px;
-    width: min(65ch, 100%-4rem);
-    margin-inline: auto;
+.join-hero {
+  background: linear-gradient(102.76deg, var(--primary) 30.7%, var(--secondary) 100%);
+  color: #FFFFFF;
+  font-size: 16px;
+  height: 100dvh;
+  line-height: 24px;
+  padding: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
 
 }
 
-.checkboxs div, .checkboxs label {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    
-  }
-label{
-    color: white;
+.join-hero-heading {
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
 
 }
-  .form-container input{
-    text-align: center;
-    margin: 40px 10px;
-    padding: 12px 80px;
-    border-radius: 10px;
-    border: none;
+
+.join-hero-heading h2 {
+  padding: 30px 0;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+
+.service-button {
+  margin: 400px;
 
 }
+
+
+
+
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  width: min(65ch, 100%-4rem);
+  margin-inline: auto;
+
+}
+
+.checkboxs div,
+.checkboxs label {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+
+}
+
+label {
+  color: white;
+
+}
+
+.form-container input {
+  text-align: center;
+  margin: 40px 10px;
+  padding: 12px 80px;
+  border-radius: 10px;
+  border: none;
+
+}
+
 input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 1px solid var(--secondary);
-    background-color: white;
-    outline: none;
-    margin-right: 10px;
-    padding: 0px;
-    margin: 20px 10px;
-
-  }
-  
-  input[type="checkbox"]:checked {
-    background-color: var(--primary);
-    border: var(--primary);
-  }
-
-  .extra{
-    width: 99%;
-  }
-
-  
-  @media (max-width: 768px) {
-    .extra{
-      width: auto;
-    }
-
-    input{
-      margin: 20px auto;
-    }
-    
-    .input{
-      width: min-content;
-    }
-
-  }
-  
-  #message{
-    width: 100%;
-    padding-bottom: 50px;
-    border-radius: 10px;
-    border-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary);
+  background-color: white;
+  outline: none;
+  margin-right: 10px;
+  padding: 0px;
+  margin: 20px 10px;
 
 }
 
-#submit{
-    display: flex;
-    margin: 10px auto;
-    padding: 10px 30px;  
-    border-radius: 10px;
-    border: none;
+input[type="checkbox"]:checked {
+  background-color: var(--primary);
+  border: var(--primary);
+}
+
+.extra {
+  width: 99%;
+}
+
+
+@media (max-width: 768px) {
+  .extra {
+    width: auto;
+  }
+
+  input {
+    margin: 20px auto;
+  }
+
+  .input {
+    width: min-content;
+  }
+
+}
+
+#message {
+  width: 100%;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  border-color: transparent;
+
+}
+
+#submit {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
 
 }
 
@@ -169,9 +173,9 @@ input[type="checkbox"] {
 
 /* popup  */
 
-.popup{
+.popup {
   width: 400px;
-  background: white ;
+  background: white;
   border-radius: 6px;
   position: absolute;
   top: 0;
@@ -185,7 +189,7 @@ input[type="checkbox"] {
   transition: transform 0.4s, top 0.4s;
 }
 
-.open-popup{
+.open-popup {
   visibility: visible;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -196,7 +200,7 @@ input[type="checkbox"] {
   width: 100px;
   margin-top: -50px;
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0 ,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .popup h2 {
@@ -205,10 +209,10 @@ input[type="checkbox"] {
   margin: 30px 0px 10px;
 }
 
-.popup button{
+.popup button {
   width: 100%;
   margin-top: 50px;
-  padding: 10px 0;  
+  padding: 10px 0;
   background-color: white;
   color: black;
   border: 0;
@@ -216,7 +220,6 @@ input[type="checkbox"] {
   font-size: 18px;
   border: 4px;
   cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0 ,0,0,0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 
 }
-
