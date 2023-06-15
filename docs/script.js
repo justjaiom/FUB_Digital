@@ -42,7 +42,7 @@ function SendMail() {
     marketing: document.getElementById("marketing").checked,
   };
   emailjs
-    .send("service_qrj6ggp", "template_2bbd5jv", params)
+    .send("service_qrj6ggp", "template_2bbd5jv", params, "N7BBFqByDPn2oBQ8F")
     .then(function (res) {
       popup.showModal();
     });
@@ -61,18 +61,6 @@ $("#form").on("submit", function (e) {
       body: new FormData(document.getElementById("form")),
     }
   )
-    .then((response) => {
-      if (response.ok) {
-        console.log("Success: Message sent");
-        // Show the success dialog or perform any other actions
-        document.getElementById("popup").showModal();
-      } else {
-        console.error("Error: Message failed to send");
-      }
-    })
-    .catch((error) => {
-      console.error("Error: ", error);
-    });
   document.getElementById("form").reset();
 });
 
