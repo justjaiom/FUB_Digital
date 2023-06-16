@@ -31,6 +31,30 @@ main {
 
 
 
+/* tags */
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-container button {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 550;
+}
+
+.filter-container button.active {
+  background-color: var(--primary);
+}
 
 
 .ourwork-hero {
@@ -167,28 +191,3 @@ main {
 
 
 
-
-/* tags */
-
-.filter-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.filter-container button {
-  display: inline-block;
-  padding: .75rem 1.5rem;
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
-  color: black;
-  background-color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-weight: 550;
-}
-
-.filter-container button.active {
-  background-color: var(--primary);
-}
