@@ -212,6 +212,7 @@ nav ul li:hover ul.sub-nav {
 
     .dropdown {
         content-visibility: hidden;
+        color: black;
         margin: -90;
     }
 
