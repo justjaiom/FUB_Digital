@@ -247,3 +247,9 @@ h6 {
   display: flex;
   justify-content: center;
 }
+
+
+
+.auto-width{
+  width: fit-content;
+}
