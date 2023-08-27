@@ -42,7 +42,7 @@ function SendMail() {
     marketing: document.getElementById("marketing").checked,
   };
   emailjs
-    .send("service_qrj6ggp", "template_2bbd5jv", params, "N7BBFqByDPn2oBQ8F")
+    .send("service_qrj6ggp", "template_2bbd5jv", params, "Xay6XEzkObC0JZWF6")
     .then(function (res) {
       popup.showModal();
     });
